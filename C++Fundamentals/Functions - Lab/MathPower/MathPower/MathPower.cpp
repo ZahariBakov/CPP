@@ -28,5 +28,6 @@ int main()
     cin >> power;
 
     //mathPower(number, power);
-    cout << pow(number, power);
+    int result = pow(number, power);
+    cout << result << endl;
 }
