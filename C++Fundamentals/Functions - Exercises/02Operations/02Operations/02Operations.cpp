@@ -13,7 +13,7 @@ int multiplicationNumbers(int x, int y) {
     return x * y;
 }
 
-float divisionNumbers(float x, float y) {
+int divisionNumbers(int x, int y) {
     return x / y;
 }
 
@@ -21,27 +21,46 @@ int main()
 {
     int firstNum, secondNum;
     cin >> firstNum >> secondNum;
-    char oper;
-    cin >> oper;
 
-    switch (oper) {
-        case '+':
-            cout << sumNumbers(firstNum, secondNum);
-            break;
-        case '-':
-            cout << subtractionNumbers(firstNum, secondNum);
-            break;
-        case '*':
-            cout << multiplicationNumbers(firstNum, secondNum);
-            break;
-        default:
-            if ((firstNum == 0) || (secondNum == 0)) {
-                cout << "Can't divide by zero.";
+    int result;
+    bool validOperator = false;
+    bool divideByZero = false;
+
+    while (!validOperator) {
+        char oper;
+        cin >> oper;
+        validOperator = true;
+
+        switch (oper) {
+            case '+':
+                result = sumNumbers(firstNum, secondNum);
                 break;
-            }
-            else {
-                cout << divisionNumbers(firstNum, secondNum);
+            case '-':
+                result = subtractionNumbers(firstNum, secondNum);
                 break;
-            }
+            case '*':
+                result = multiplicationNumbers(firstNum, secondNum);
+                break;
+            case '/':
+                if ((firstNum == 0) || (secondNum == 0)) {
+                    divideByZero = true;
+                    break;
+                }
+                else {
+                    result = divisionNumbers(firstNum, secondNum);
+                    break;
+                }
+            default:
+                validOperator = false;
+                cout << "try again" << endl;
+                break;
+        }
+    }
+
+    if (divideByZero) {
+        cout << "Can't divide by zero.";
+    }
+    else {
+        cout << result << endl;
     }
 }
