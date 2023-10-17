@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06.TheSignalAndTheNoise", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07.TheNoiseAndTheSignal", "07.TheNoiseAndTheSignal\07.TheNoiseAndTheSignal.vcxproj", "{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09.ASCIIArt", "09.ASCIIArt\09.ASCIIArt.vcxproj", "{C968CD72-5D01-4CB1-A049-AB0AA13A3B80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}.Release|x64.Build.0 = Release|x64
 		{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}.Release|x86.ActiveCfg = Release|Win32
 		{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}.Release|x86.Build.0 = Release|Win32
+		{C968CD72-5D01-4CB1-A049-AB0AA13A3B80}.Debug|x64.ActiveCfg = Debug|x64
+		{C968CD72-5D01-4CB1-A049-AB0AA13A3B80}.Debug|x64.Build.0 = Debug|x64
+		{C968CD72-5D01-4CB1-A049-AB0AA13A3B80}.Debug|x86.ActiveCfg = Debug|Win32
+		{C968CD72-5D01-4CB1-A049-AB0AA13A3B80}.Debug|x86.Build.0 = Debug|Win32
+		{C968CD72-5D01-4CB1-A049-AB0AA13A3B80}.Release|x64.ActiveCfg = Release|x64
+		{C968CD72-5D01-4CB1-A049-AB0AA13A3B80}.Release|x64.Build.0 = Release|x64
+		{C968CD72-5D01-4CB1-A049-AB0AA13A3B80}.Release|x86.ActiveCfg = Release|Win32
+		{C968CD72-5D01-4CB1-A049-AB0AA13A3B80}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
