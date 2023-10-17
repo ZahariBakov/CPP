@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05.InvalidInput", "05.Inval
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06.TheSignalAndTheNoise", "06.TheSignalAndTheNoise\06.TheSignalAndTheNoise.vcxproj", "{1FCC0B7E-EFE2-4CF0-89D5-1F7BF36D21E0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07.TheNoiseAndTheSignal", "07.TheNoiseAndTheSignal\07.TheNoiseAndTheSignal.vcxproj", "{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{1FCC0B7E-EFE2-4CF0-89D5-1F7BF36D21E0}.Release|x64.Build.0 = Release|x64
 		{1FCC0B7E-EFE2-4CF0-89D5-1F7BF36D21E0}.Release|x86.ActiveCfg = Release|Win32
 		{1FCC0B7E-EFE2-4CF0-89D5-1F7BF36D21E0}.Release|x86.Build.0 = Release|Win32
+		{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}.Debug|x64.ActiveCfg = Debug|x64
+		{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}.Debug|x64.Build.0 = Debug|x64
+		{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}.Debug|x86.ActiveCfg = Debug|Win32
+		{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}.Debug|x86.Build.0 = Debug|Win32
+		{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}.Release|x64.ActiveCfg = Release|x64
+		{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}.Release|x64.Build.0 = Release|x64
+		{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}.Release|x86.ActiveCfg = Release|Win32
+		{58F5A7E9-083A-4F9B-9680-F0712F46A9F4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
