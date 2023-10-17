@@ -1,0 +1,51 @@
+#include <iostream>
+#include <vector>
+#include <string>
+#include <sstream>
+
+bool compareArrays(const std::vector<int>& arr1,
+                   const std::vector<int>& arr2) {
+    if (arr1.size() != arr2.size()) {
+        return false;
+    }
+
+    for (size_t i = 0; i < arr1.size(); i++) {
+        if (arr1[i] != arr2[i]) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+std::vector<int> readArrFromInput() {
+    std::vector<int> arr{};
+    std::string line;
+    getline(std::cin, line);
+
+    std::istringstream istr(line);
+    int currentNumber = 0;
+
+    while (istr >> currentNumber) {
+        arr.push_back(currentNumber);
+    }
+
+    return arr;
+}
+
+int main()
+{
+    const std::vector<int> arr1 = readArrFromInput();
+    const std::vector<int> arr2 = readArrFromInput();
+     
+    const bool result = compareArrays(arr1, arr2);
+
+    if (result) {
+        std::cout << "equal" << std::endl;
+    }
+    else {
+        std::cout << "not equal" << std::endl;
+    }
+
+    return 0;
+}
