@@ -17,9 +17,8 @@ std::vector<std::string> readInput() {
 }
 
 void printInReverseOrder(std::vector<std::string>& words) {
-    while (!words.empty()) {
-        std::cout << words.back() << ' ';
-        words.pop_back();
+    for (int i = words.size() - 1; i >= 0; --i) {
+        std::cout << words[i] << ' ';
     }
 }
 
