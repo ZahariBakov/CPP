@@ -1,24 +1,37 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
-int main()
-{
-    std::vector<int> numbers{ 1, 3, 5 };
-    const int searchNumber = 4;
+std::vector<std::string> readInput() {
+    std::vector<std::string> vec;
+    const std::string delimiter = "hot-potatoes";
+    std::string word;
+    std::cin >> word;
 
-    std::vector<int>::const_iterator it = std::lower_bound(numbers.begin(), numbers.end(), searchNumber);
-
-    if (it == numbers.end()) {
-        std::cout << "not found" << std::endl;
+    while (word != delimiter) {
+        vec.push_back(word);
+        std::cin >> word;
     }
-    else {
-        // std::cout << *it << std::endl;
 
-        if (*it == searchNumber) {
-            std::cout << "Found the number: " << searchNumber << std::endl;
-        }
-        else {
-            std::cout << "Did not find the number " << searchNumber << ", but it should be inserted into pos : " << it - numbers.begin() << std::endl;
-        }
+    return vec;
+}
+
+void printInReverseOrder(std::vector<std::string>& words) {
+    while (!words.empty()) {
+        std::cout << words.back() << ' ';
+        words.pop_back();
     }
 }
+
+int main() {
+    std::vector<std::string> words = readInput();
+    printInReverseOrder(words);
+
+    return 0;
+}
+
+// input:
+// Hello C++ Dudes hot-potatoes
+
+// output:
+// Dudes C++ Hello
