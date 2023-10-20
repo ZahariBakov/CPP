@@ -4,6 +4,9 @@
 #include <sstream>
 #include <list>
 
+const char FIRST_TRAIN_MARKET = 'A';
+const char SECOND_TRAIN_MARKET = 'B';
+
 std::vector<int> readTrainFromInput() {
     std::vector<int> train;
     std::string line;
@@ -18,20 +21,13 @@ std::vector<int> readTrainFromInput() {
     return train;
 }
 
-void handleFirstTrainEmpty(std::vector<int>& secondTrain,
-                           std::list<int>& mergedTrain,
-                           std::string& trainSequence) {
-    mergedTrain.push_front(secondTrain.back());
-    trainSequence.push_back('B');
-    secondTrain.pop_back();
-}
-
-void handleSecondTrainEmpty(std::vector<int>& firstTrain,
-                            std::list<int>& mergedTrain,
-                            std::string& trainSequence) {
-    mergedTrain.push_front(firstTrain.back());
-    trainSequence.push_back('A');
-    firstTrain.pop_back();
+void handleTrain(char trainSymbol,
+                 std::vector<int>& train,
+                 std::list<int>& mergedTrain,
+                 std::string& trainSequence) {
+    mergedTrain.push_front(train.back());
+    trainSequence.push_back(trainSymbol);
+    train.pop_back();
 }
 
 void handleBothTrainsNotEmpty(std::vector<int>& firstTrain,
@@ -39,14 +35,10 @@ void handleBothTrainsNotEmpty(std::vector<int>& firstTrain,
                               std::list<int>& mergedTrain,
                               std::string& trainSequence) {
     if (firstTrain.back() > secondTrain.back()) {
-        mergedTrain.push_front(secondTrain.back());
-        trainSequence.push_back('B');
-        secondTrain.pop_back();
+        handleTrain(SECOND_TRAIN_MARKET, secondTrain, mergedTrain, trainSequence);
     }
     else {
-        mergedTrain.push_front(firstTrain.back());
-        trainSequence.push_back('A');
-        firstTrain.pop_back();
+        handleTrain(FIRST_TRAIN_MARKET, firstTrain, mergedTrain, trainSequence);
     }
 }
 
@@ -63,12 +55,12 @@ void mergedTrains(std::vector<int>& firstTrain,
         }
 
         if (isFirstTrainEmpty) {
-            handleFirstTrainEmpty(secondTrain, mergedTrain, trainSequence);
+            handleTrain(SECOND_TRAIN_MARKET, secondTrain, mergedTrain, trainSequence);
             continue;
         }
 
         if (isSecondTrainEmpty) {
-            handleSecondTrainEmpty(firstTrain, mergedTrain, trainSequence);
+            handleTrain(FIRST_TRAIN_MARKET, firstTrain, mergedTrain, trainSequence);
             continue;
         }
         else {
