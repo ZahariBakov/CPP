@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.MergeTrains", "01.MergeTrains\01.MergeTrains.vcxproj", "{BAA41E8D-90AC-4E6F-BAD0-9CFB2E1397B7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05.Defibrillators", "05.Defibrillators\05.Defibrillators.vcxproj", "{7816CEA1-8371-4753-A47A-E08354228C34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{BAA41E8D-90AC-4E6F-BAD0-9CFB2E1397B7}.Release|x64.Build.0 = Release|x64
 		{BAA41E8D-90AC-4E6F-BAD0-9CFB2E1397B7}.Release|x86.ActiveCfg = Release|Win32
 		{BAA41E8D-90AC-4E6F-BAD0-9CFB2E1397B7}.Release|x86.Build.0 = Release|Win32
+		{7816CEA1-8371-4753-A47A-E08354228C34}.Debug|x64.ActiveCfg = Debug|x64
+		{7816CEA1-8371-4753-A47A-E08354228C34}.Debug|x64.Build.0 = Debug|x64
+		{7816CEA1-8371-4753-A47A-E08354228C34}.Debug|x86.ActiveCfg = Debug|Win32
+		{7816CEA1-8371-4753-A47A-E08354228C34}.Debug|x86.Build.0 = Debug|Win32
+		{7816CEA1-8371-4753-A47A-E08354228C34}.Release|x64.ActiveCfg = Release|x64
+		{7816CEA1-8371-4753-A47A-E08354228C34}.Release|x64.Build.0 = Release|x64
+		{7816CEA1-8371-4753-A47A-E08354228C34}.Release|x86.ActiveCfg = Release|Win32
+		{7816CEA1-8371-4753-A47A-E08354228C34}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
