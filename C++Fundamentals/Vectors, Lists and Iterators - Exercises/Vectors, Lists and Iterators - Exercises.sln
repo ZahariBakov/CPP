@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05.Defibrillators", "05.Def
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.Brackets", "02.Brackets\02.Brackets.vcxproj", "{3E56BB43-FBC0-461B-A5BA-20DB15EF7513}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.Pipes", "03.Pipes\03.Pipes.vcxproj", "{EE997279-5445-4FFB-95D9-82399BC383B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{3E56BB43-FBC0-461B-A5BA-20DB15EF7513}.Release|x64.Build.0 = Release|x64
 		{3E56BB43-FBC0-461B-A5BA-20DB15EF7513}.Release|x86.ActiveCfg = Release|Win32
 		{3E56BB43-FBC0-461B-A5BA-20DB15EF7513}.Release|x86.Build.0 = Release|Win32
+		{EE997279-5445-4FFB-95D9-82399BC383B8}.Debug|x64.ActiveCfg = Debug|x64
+		{EE997279-5445-4FFB-95D9-82399BC383B8}.Debug|x64.Build.0 = Debug|x64
+		{EE997279-5445-4FFB-95D9-82399BC383B8}.Debug|x86.ActiveCfg = Debug|Win32
+		{EE997279-5445-4FFB-95D9-82399BC383B8}.Debug|x86.Build.0 = Debug|Win32
+		{EE997279-5445-4FFB-95D9-82399BC383B8}.Release|x64.ActiveCfg = Release|x64
+		{EE997279-5445-4FFB-95D9-82399BC383B8}.Release|x64.Build.0 = Release|x64
+		{EE997279-5445-4FFB-95D9-82399BC383B8}.Release|x86.ActiveCfg = Release|Win32
+		{EE997279-5445-4FFB-95D9-82399BC383B8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
