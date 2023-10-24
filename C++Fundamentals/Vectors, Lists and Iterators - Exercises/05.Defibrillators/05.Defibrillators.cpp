@@ -34,12 +34,12 @@ std::vector<std::string> readDefibrilatorDataFormInput() {
 }
 
 void parseDefibData(const std::vector<std::string>& defsData,
-                    std::vector<std::string>& defNumbers,
-                    std::vector<std::string>& defNames,
-                    std::vector<std::string>& defAdress,
-                    std::vector<std::string>& defPhone,
-                    std::vector<std::string>& defLons,
-                    std::vector<std::string>& defLats) {
+    std::vector<std::string>& defNumbers,
+    std::vector<std::string>& defNames,
+    std::vector<std::string>& defAdress,
+    std::vector<std::string>& defPhone,
+    std::vector<std::string>& defLons,
+    std::vector<std::string>& defLats) {
     const size_t size = defsData.size();
     defNumbers.resize(size);
     defNames.resize(size);
@@ -67,13 +67,13 @@ void parseDefibData(const std::vector<std::string>& defsData,
 }
 
 std::vector<double> getDistances(const std::string& userLon,
-                                 const std::string& userLat,
-                                 const std::vector<std::string>& defLons,
-                                 const std::vector<std::string>& defLats) {
+    const std::string& userLat,
+    const std::vector<std::string>& defLons,
+    const std::vector<std::string>& defLats) {
     size_t size = defLons.size();
     std::vector<double> distances(size);
     const double userLonD = std::stod(userLon);
-    const double userLatD = std::stod(userLat); 
+    const double userLatD = std::stod(userLat);
     const double earthRadius = 6371;
 
     for (size_t i = 0; i < size; ++i) {
