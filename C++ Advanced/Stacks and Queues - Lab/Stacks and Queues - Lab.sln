@@ -7,6 +7,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.UsingStack", "01.UsingSt
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.BrowserHistory", "02.BrowserHistory\02.BrowserHistory.vcxproj", "{3E53F9FE-F99D-4AA0-9EB2-94353C598FAD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.UsingQueue", "03.UsingQueue\03.UsingQueue.vcxproj", "{B063C787-4E00-4A12-A327-73EA66FB31EB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04.BrowserHistoryExtended", "04.BrowserHistoryExtended\04.BrowserHistoryExtended.vcxproj", "{D1250643-2EE6-4567-9C6B-142FA846A59A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +35,22 @@ Global
 		{3E53F9FE-F99D-4AA0-9EB2-94353C598FAD}.Release|x64.Build.0 = Release|x64
 		{3E53F9FE-F99D-4AA0-9EB2-94353C598FAD}.Release|x86.ActiveCfg = Release|Win32
 		{3E53F9FE-F99D-4AA0-9EB2-94353C598FAD}.Release|x86.Build.0 = Release|Win32
+		{B063C787-4E00-4A12-A327-73EA66FB31EB}.Debug|x64.ActiveCfg = Debug|x64
+		{B063C787-4E00-4A12-A327-73EA66FB31EB}.Debug|x64.Build.0 = Debug|x64
+		{B063C787-4E00-4A12-A327-73EA66FB31EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{B063C787-4E00-4A12-A327-73EA66FB31EB}.Debug|x86.Build.0 = Debug|Win32
+		{B063C787-4E00-4A12-A327-73EA66FB31EB}.Release|x64.ActiveCfg = Release|x64
+		{B063C787-4E00-4A12-A327-73EA66FB31EB}.Release|x64.Build.0 = Release|x64
+		{B063C787-4E00-4A12-A327-73EA66FB31EB}.Release|x86.ActiveCfg = Release|Win32
+		{B063C787-4E00-4A12-A327-73EA66FB31EB}.Release|x86.Build.0 = Release|Win32
+		{D1250643-2EE6-4567-9C6B-142FA846A59A}.Debug|x64.ActiveCfg = Debug|x64
+		{D1250643-2EE6-4567-9C6B-142FA846A59A}.Debug|x64.Build.0 = Debug|x64
+		{D1250643-2EE6-4567-9C6B-142FA846A59A}.Debug|x86.ActiveCfg = Debug|Win32
+		{D1250643-2EE6-4567-9C6B-142FA846A59A}.Debug|x86.Build.0 = Debug|Win32
+		{D1250643-2EE6-4567-9C6B-142FA846A59A}.Release|x64.ActiveCfg = Release|x64
+		{D1250643-2EE6-4567-9C6B-142FA846A59A}.Release|x64.Build.0 = Release|x64
+		{D1250643-2EE6-4567-9C6B-142FA846A59A}.Release|x86.ActiveCfg = Release|Win32
+		{D1250643-2EE6-4567-9C6B-142FA846A59A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
