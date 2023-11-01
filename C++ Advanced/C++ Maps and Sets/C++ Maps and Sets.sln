@@ -19,6 +19,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07.Map-of-Vectors", "07.Map
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08.Sotring-Array-Like-Containers", "08.Sotring-Array-Like-Containers\08.Sotring-Array-Like-Containers.vcxproj", "{8A023D76-D071-4F8E-B606-4C5FE36D0903}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11.Searching-Algorithms", "11.Searching-Algorithms\11.Searching-Algorithms.vcxproj", "{118FDF7F-2227-4CFD-A9D1-DE9988C8D12E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12.Some-Other-Algorithms", "12.Some-Other-Algorithms\12.Some-Other-Algorithms.vcxproj", "{4FE1344C-395C-4DA0-82CA-C8A1FDC0E86C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +95,22 @@ Global
 		{8A023D76-D071-4F8E-B606-4C5FE36D0903}.Release|x64.Build.0 = Release|x64
 		{8A023D76-D071-4F8E-B606-4C5FE36D0903}.Release|x86.ActiveCfg = Release|Win32
 		{8A023D76-D071-4F8E-B606-4C5FE36D0903}.Release|x86.Build.0 = Release|Win32
+		{118FDF7F-2227-4CFD-A9D1-DE9988C8D12E}.Debug|x64.ActiveCfg = Debug|x64
+		{118FDF7F-2227-4CFD-A9D1-DE9988C8D12E}.Debug|x64.Build.0 = Debug|x64
+		{118FDF7F-2227-4CFD-A9D1-DE9988C8D12E}.Debug|x86.ActiveCfg = Debug|Win32
+		{118FDF7F-2227-4CFD-A9D1-DE9988C8D12E}.Debug|x86.Build.0 = Debug|Win32
+		{118FDF7F-2227-4CFD-A9D1-DE9988C8D12E}.Release|x64.ActiveCfg = Release|x64
+		{118FDF7F-2227-4CFD-A9D1-DE9988C8D12E}.Release|x64.Build.0 = Release|x64
+		{118FDF7F-2227-4CFD-A9D1-DE9988C8D12E}.Release|x86.ActiveCfg = Release|Win32
+		{118FDF7F-2227-4CFD-A9D1-DE9988C8D12E}.Release|x86.Build.0 = Release|Win32
+		{4FE1344C-395C-4DA0-82CA-C8A1FDC0E86C}.Debug|x64.ActiveCfg = Debug|x64
+		{4FE1344C-395C-4DA0-82CA-C8A1FDC0E86C}.Debug|x64.Build.0 = Debug|x64
+		{4FE1344C-395C-4DA0-82CA-C8A1FDC0E86C}.Debug|x86.ActiveCfg = Debug|Win32
+		{4FE1344C-395C-4DA0-82CA-C8A1FDC0E86C}.Debug|x86.Build.0 = Debug|Win32
+		{4FE1344C-395C-4DA0-82CA-C8A1FDC0E86C}.Release|x64.ActiveCfg = Release|x64
+		{4FE1344C-395C-4DA0-82CA-C8A1FDC0E86C}.Release|x64.Build.0 = Release|x64
+		{4FE1344C-395C-4DA0-82CA-C8A1FDC0E86C}.Release|x86.ActiveCfg = Release|Win32
+		{4FE1344C-395C-4DA0-82CA-C8A1FDC0E86C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
