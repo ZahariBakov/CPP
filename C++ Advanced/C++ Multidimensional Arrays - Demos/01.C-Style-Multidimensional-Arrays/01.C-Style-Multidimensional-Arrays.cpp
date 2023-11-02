@@ -58,5 +58,28 @@ int main() {
     cout << cube[0][0][0] << endl;
     cout << cube[1][1][1] << endl;
 
+    const int maxRowsSize = 10;
+    const int maxColsSize = 10;
+
+    int newRows = 0;
+    int newCols = 0;
+
+    std::cin >> newRows >> newCols;
+
+    int newArr[maxRowsSize][maxColsSize];
+
+    for (int i = 0; i < newRows; ++i) {
+        for (int j = 0; j < newCols; ++j) {
+            std::cin >> newArr[i][j];
+        }
+    }
+
+    for (int i = 0; i < newRows; ++i) {
+        for (int j = 0; j < newCols; ++j) {
+            std::cout << newArr[i][j] << ' ';
+        }
+        std::cout << std::endl;
+    }
+
     return 0;
 }
