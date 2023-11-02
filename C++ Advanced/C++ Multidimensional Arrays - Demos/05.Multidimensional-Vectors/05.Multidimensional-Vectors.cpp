@@ -69,19 +69,26 @@ int main() {
     std::cout << "Enter array cols: ";
     std::cin >> inputMatrixCols;
 
-    std::vector<std::vector<int> > inputMatrix;
+    std::vector<std::vector<int> > inputMatrix(inputMatrixRows, std::vector<int>(inputMatrixCols));
 
-    for (int row = 0; row < inputMatrixRows; row++) {
-        std::vector<int> inputRow;
-
-        for (int col = 0; col < inputMatrixCols; col++) {
-            int element;
-            std::cin >> element;
-            inputRow.push_back(element);
+    for (auto& row : inputMatrix) {
+        for (auto& elem : row) {
+            std::cin >> elem;
         }
-
-        inputMatrix.push_back(inputRow);
     }
+
+    //for (int row = 0; row < inputMatrixRows; row++) {
+    //    std::vector<int> inputRow;
+
+    //    for (int col = 0; col < inputMatrixCols; col++) {
+    //        int element;
+    //        std::cin >> element;
+    //        inputRow.push_back(element);
+    //    }
+
+    //    // inputMatrix.push_back(inputRow);
+    //    inputMatrix[row] = (inputRow);
+    //}
 
     std::cout << "The matrix you typed in:" << std::endl;
 
