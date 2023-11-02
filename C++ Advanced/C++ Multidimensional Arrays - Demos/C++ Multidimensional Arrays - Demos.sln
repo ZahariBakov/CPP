@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04.C++-Style-Multidimension
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05.Multidimensional-Vectors", "05.Multidimensional-Vectors\05.Multidimensional-Vectors.vcxproj", "{9ACA57F2-BF67-4F08-9EBC-2EEE32C06A2D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06.2D-Vectors-As-Parameters", "06.2D-Vectors-As-Parameters\06.2D-Vectors-As-Parameters.vcxproj", "{C5D04715-9679-4EB5-B137-54AFB221F401}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{9ACA57F2-BF67-4F08-9EBC-2EEE32C06A2D}.Release|x64.Build.0 = Release|x64
 		{9ACA57F2-BF67-4F08-9EBC-2EEE32C06A2D}.Release|x86.ActiveCfg = Release|Win32
 		{9ACA57F2-BF67-4F08-9EBC-2EEE32C06A2D}.Release|x86.Build.0 = Release|Win32
+		{C5D04715-9679-4EB5-B137-54AFB221F401}.Debug|x64.ActiveCfg = Debug|x64
+		{C5D04715-9679-4EB5-B137-54AFB221F401}.Debug|x64.Build.0 = Debug|x64
+		{C5D04715-9679-4EB5-B137-54AFB221F401}.Debug|x86.ActiveCfg = Debug|Win32
+		{C5D04715-9679-4EB5-B137-54AFB221F401}.Debug|x86.Build.0 = Debug|Win32
+		{C5D04715-9679-4EB5-B137-54AFB221F401}.Release|x64.ActiveCfg = Release|x64
+		{C5D04715-9679-4EB5-B137-54AFB221F401}.Release|x64.Build.0 = Release|x64
+		{C5D04715-9679-4EB5-B137-54AFB221F401}.Release|x86.ActiveCfg = Release|Win32
+		{C5D04715-9679-4EB5-B137-54AFB221F401}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
