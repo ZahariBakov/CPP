@@ -12,6 +12,7 @@ int main() {
     };
 
     matrix[1][3] = 0; // This is out of range cols. This will change rows with index 2 and cols with index 0.
+    // matrix[4][3] = 0; // This is out of range rows and cols. This will return undefined behavior.
 
     for (int row = 0; row < rows; row++) {
         for (int col = 0; col < cols; col++) {
