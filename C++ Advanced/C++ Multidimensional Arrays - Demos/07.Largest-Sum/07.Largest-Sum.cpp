@@ -2,8 +2,12 @@
 #include <vector>
 #include <limits>
 #include <random>
+#include <thread>
 
 void printMaxColSum(const std::vector<std::vector<int>>& vec2D) {
+    // std::chrono::time_point<std::chrono::high_resolution_clock> start = std::chrono::high_resolution_clock::now();
+    const auto start = std::chrono::high_resolution_clock::now();
+
     int maxSum = INT32_MIN;
     int colIndex = 0;
     const size_t arrSize = vec2D.size();
@@ -24,6 +28,11 @@ void printMaxColSum(const std::vector<std::vector<int>>& vec2D) {
     }
 
     std::cout << colIndex << std::endl;
+
+    const auto end = std::chrono::high_resolution_clock::now();
+    const auto elapsed = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+
+    std::cout << "Operation took: " << elapsed.count() << " ms" << std::endl;
 
     /*for (size_t i = 0; i < arrSize; ++i) {
         std::cout << "arr[" << i << "]: " << vec2D[i][colIndex] << std::endl;
@@ -48,7 +57,7 @@ std::vector<std::vector<int>> createRandomVec2D(int size) {
 }
 
 int main() {
-    const auto size = 100;
+    const auto size = 10000;
     const auto vec2D = createRandomVec2D(size);
 
     printMaxColSum(vec2D);
