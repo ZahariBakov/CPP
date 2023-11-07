@@ -27,6 +27,7 @@ void readInput(int n,
 
             countriesData[country].push_back(city);
         } 
+
     }
 }
 
