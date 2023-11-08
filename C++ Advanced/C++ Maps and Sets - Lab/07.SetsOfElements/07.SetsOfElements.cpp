@@ -2,27 +2,25 @@
 #include <set>
 #include <vector>
 
-void readNumberToSet(int num, std::set<int>& NumbersSet, std::vector<int>& orderSet) {
+std::set<int> readNumberToSet(int num) {
+    std::set<int> sets;
+    int currentNum;
+
     for (int i = 0; i < num; ++i) {
-        int num;
-        std::cin >> num;
-
-        auto it = find(NumbersSet.begin(), NumbersSet.end(), num);
-
-        if (it == NumbersSet.end()) {
-            NumbersSet.insert(num);
-            orderSet.push_back(num);
-        }
+        std::cin >> currentNum;
+        sets.insert(currentNum);
     }
+
+    return sets;
 }
 
-std::vector<int> uniqueSet(std::vector<int>& orderFirst, std::vector<int>& orderSecond) {
+std::vector<int> getUniqueElem(std::set<int>& BigestSet, std::set<int>& LowerSet) {
     std::vector<int> uniqueElem;
 
-    for (auto firstNum : orderFirst) {
-        for (auto secondNum : orderSecond) {
-            if (firstNum == secondNum) {
-                uniqueElem.push_back(firstNum);
+    for (auto& firstElem : BigestSet) {
+        for (auto& secondElem : LowerSet) {
+            if (firstElem == secondElem) {
+                uniqueElem.push_back(firstElem);
             }
         }
     }
@@ -30,10 +28,22 @@ std::vector<int> uniqueSet(std::vector<int>& orderFirst, std::vector<int>& order
     return uniqueElem;
 }
 
-void printSolution(std::vector<int>& uniqueElem) {
+std::vector<int> findBiggestSet(std::set<int>& firstNumberSet, std::set<int>& secodnNumberSet) {
+    std::vector<int> uniqueElem;
 
-    for (auto num : uniqueElem) {
-        std::cout << num << " ";
+    if (firstNumberSet.size() > secodnNumberSet.size()) {
+        uniqueElem = getUniqueElem(firstNumberSet, secodnNumberSet);
+    }
+    else {
+        uniqueElem = getUniqueElem(secodnNumberSet, firstNumberSet);
+    }
+
+    return uniqueElem;
+}
+
+void printSolution(std::vector<int>& uniqueElem) {
+    for (int i = 0; i < uniqueElem.size(); ++i) {
+        std::cout << uniqueElem[i] << " ";
     }
     std::cout << std::endl;
 }
@@ -44,16 +54,10 @@ int main() {
 
     std::cin >> firstSetLength >> secondSetLength;
 
-    std::set<int> firstNumbersSet;
-    std::vector<int> orderFirst;
-    readNumberToSet(firstSetLength, firstNumbersSet, orderFirst);
+    std::set<int> firstNumberSet = readNumberToSet(firstSetLength);
+    std::set<int> secodnNumberSet = readNumberToSet(secondSetLength);
 
-
-    std::set<int> secodnNumbersSet;
-    std::vector<int> orderSecond;
-    readNumberToSet(secondSetLength, secodnNumbersSet, orderSecond);
-
-    std::vector<int> uniqueElem = uniqueSet(orderFirst, orderSecond);
+    std::vector<int> uniqueElem = findBiggestSet(firstNumberSet, secodnNumberSet);
 
     std::cout << std::endl;
 
