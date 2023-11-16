@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.SumMatrixColumns", "01.S
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.PrimaryDiagonal", "02.PrimaryDiagonal\02.PrimaryDiagonal.vcxproj", "{512A35F7-D6EE-4FB2-AF67-83565F1AF9BD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.SymbolInMatrix", "03.SymbolInMatrix\03.SymbolInMatrix.vcxproj", "{2DC67D27-E7BB-4E20-9E86-3B1D5BA79058}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{512A35F7-D6EE-4FB2-AF67-83565F1AF9BD}.Release|x64.Build.0 = Release|x64
 		{512A35F7-D6EE-4FB2-AF67-83565F1AF9BD}.Release|x86.ActiveCfg = Release|Win32
 		{512A35F7-D6EE-4FB2-AF67-83565F1AF9BD}.Release|x86.Build.0 = Release|Win32
+		{2DC67D27-E7BB-4E20-9E86-3B1D5BA79058}.Debug|x64.ActiveCfg = Debug|x64
+		{2DC67D27-E7BB-4E20-9E86-3B1D5BA79058}.Debug|x64.Build.0 = Debug|x64
+		{2DC67D27-E7BB-4E20-9E86-3B1D5BA79058}.Debug|x86.ActiveCfg = Debug|Win32
+		{2DC67D27-E7BB-4E20-9E86-3B1D5BA79058}.Debug|x86.Build.0 = Debug|Win32
+		{2DC67D27-E7BB-4E20-9E86-3B1D5BA79058}.Release|x64.ActiveCfg = Release|x64
+		{2DC67D27-E7BB-4E20-9E86-3B1D5BA79058}.Release|x64.Build.0 = Release|x64
+		{2DC67D27-E7BB-4E20-9E86-3B1D5BA79058}.Release|x86.ActiveCfg = Release|Win32
+		{2DC67D27-E7BB-4E20-9E86-3B1D5BA79058}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
