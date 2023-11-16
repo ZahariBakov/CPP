@@ -42,42 +42,6 @@ std::vector<std::vector<std::vector<int>>> readVec3DFromInput(int size) {
     return vec3D;
 }
 
-bool areEqualVector(const std::vector<int>& firstVec1D,
-                    const std::vector<int>& secondVec1D) {
-    const size_t size = firstVec1D.size();
-
-    if (size != secondVec1D.size()) {
-        return false;
-    }
-
-    for (size_t i = 0; i < firstVec1D.size(); ++i) {
-        if (firstVec1D[i] != secondVec1D[i]) {
-            return false;
-        }
-    }
-
-    return true;
-}
-
-bool areEqualMatrix(const std::vector<std::vector<int>>& firstVec2D, 
-                    const std::vector<std::vector<int>>& secondVec2D) {
-    const size_t size = firstVec2D.size();
-
-    if (size != secondVec2D.size()) {
-        return false;
-    }
-
-    for (size_t i = 0; i < size; ++i) {
-        const bool areEqual = areEqualVector(firstVec2D[i], secondVec2D[i]);
-
-        if (!areEqual) {
-            return false;
-        }
-     }
-
-    return true;
-}
-
 void pritSolution(bool areEqual) {
     if (areEqual) {
         std::cout << "equal" << std::endl;
@@ -90,7 +54,7 @@ void pritSolution(bool areEqual) {
 int main() {
     const auto numberOfVectors = 2;
     const auto vec3D = readVec3DFromInput(numberOfVectors);
-    const bool areEual = areEqualMatrix(vec3D[0], vec3D[1]);
+    const bool areEual = vec3D[0] == vec3D[1];
     pritSolution(areEual);
 
     return 0;
