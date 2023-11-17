@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06.Surface", "06.Surface\06
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.SquaresInMatrix", "03.SquaresInMatrix\03.SquaresInMatrix.vcxproj", "{7E2AFDF7-73B4-4792-80AB-C7CDFE48E45F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04.SnakeMoves", "04.SnakeMoves\04.SnakeMoves.vcxproj", "{DC2F80EC-BE3E-4A3E-B7A5-ADFA9BFE9255}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{7E2AFDF7-73B4-4792-80AB-C7CDFE48E45F}.Release|x64.Build.0 = Release|x64
 		{7E2AFDF7-73B4-4792-80AB-C7CDFE48E45F}.Release|x86.ActiveCfg = Release|Win32
 		{7E2AFDF7-73B4-4792-80AB-C7CDFE48E45F}.Release|x86.Build.0 = Release|Win32
+		{DC2F80EC-BE3E-4A3E-B7A5-ADFA9BFE9255}.Debug|x64.ActiveCfg = Debug|x64
+		{DC2F80EC-BE3E-4A3E-B7A5-ADFA9BFE9255}.Debug|x64.Build.0 = Debug|x64
+		{DC2F80EC-BE3E-4A3E-B7A5-ADFA9BFE9255}.Debug|x86.ActiveCfg = Debug|Win32
+		{DC2F80EC-BE3E-4A3E-B7A5-ADFA9BFE9255}.Debug|x86.Build.0 = Debug|Win32
+		{DC2F80EC-BE3E-4A3E-B7A5-ADFA9BFE9255}.Release|x64.ActiveCfg = Release|x64
+		{DC2F80EC-BE3E-4A3E-B7A5-ADFA9BFE9255}.Release|x64.Build.0 = Release|x64
+		{DC2F80EC-BE3E-4A3E-B7A5-ADFA9BFE9255}.Release|x86.ActiveCfg = Release|Win32
+		{DC2F80EC-BE3E-4A3E-B7A5-ADFA9BFE9255}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

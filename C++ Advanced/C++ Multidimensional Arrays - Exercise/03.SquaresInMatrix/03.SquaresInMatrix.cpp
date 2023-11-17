@@ -25,15 +25,13 @@ int findSquaresInMatrix(const std::vector<std::vector<char>>& matrix) {
     int colSize = int(matrix[0].size());
     char searchedChar;
 
-    for (int row = 0; row < rowSize; ++row) {
-        for (int col = 0; col < colSize; ++col) {
+    for (int row = 0; row < rowSize - 1; ++row) {
+        for (int col = 0; col < colSize - 1; ++col) {
             searchedChar = matrix[row][col];
-            if (row + 1 < rowSize && col + 1 < colSize) {
-                if (searchedChar == matrix[row + 1][col]) {
-                    if (searchedChar == matrix[row][col + 1]) {
-                        if (searchedChar == matrix[row + 1][col + 1]) {
-                            result += 1;
-                        }
+            if (searchedChar == matrix[row + 1][col]) {
+                if (searchedChar == matrix[row][col + 1]) {
+                    if (searchedChar == matrix[row + 1][col + 1]) {
+                        result += 1;
                     }
                 }
             }
