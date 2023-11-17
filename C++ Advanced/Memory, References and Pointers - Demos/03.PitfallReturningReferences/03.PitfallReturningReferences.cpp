@@ -21,7 +21,7 @@ int main() {
     // the same program
     std::vector<int> rootsRef = generateRoots(100);
 
-    // NOTE 2: this itherVector is here to simulate a real enviromnt, where
+    // NOTE 2: this otherVector is here to simulate a real enviromnt, where
     // additional memory allocations might overwrite the freed memory. Under
     // Windows, in Code::Blocks with MinGW this otherVector seem to overwrite that memory,
     // making the printed value different. But it is not 100% quaranted, especiall
@@ -33,7 +33,12 @@ int main() {
 
     std::cout << generateRoots(100)[4] << std::endl;
 
-    std::cout << &rootsRef;
+    std::cout << &rootsRef << std::endl;
+
+    int arr[] = { 2018, 310 };
+
+    std::cout << arr << " " << &arr << " " << &arr[0] << std::endl;
+    std::cout << &arr[1] << std::endl;
 
     return 0;
 }
