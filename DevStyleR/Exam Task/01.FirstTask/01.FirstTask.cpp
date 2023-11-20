@@ -2,15 +2,15 @@
 #include <vector>
 #include <string>
 
-    // RepairRecord structure
-    struct RepairRecord {
-        std::string licensePlate;
-        std::string ownerName;
-        std::string repairDescription;
-        double repairCost;
-        std::vector<std::string> partsUsed;
-        int laborHours;
-    };
+// RepairRecord structure
+struct RepairRecord {
+    std::string licensePlate;
+    std::string ownerName;
+    std::string repairDescription;
+    double repairCost;
+    std::vector<std::string> partsUsed;
+    int laborHours;
+};
 
 // Function to add a new repair record
 void addRepairRecord(std::vector<RepairRecord>& records) {
@@ -294,28 +294,27 @@ int main() {
 // 
 // Exit program
 
-//Quick access to commands
-//1
-//A4972MA
-//Petar Dimitrov
-//Changing the spark plugs
-//four hundred
-//400
-//two
-//2
-//spark plugs - 4ps.
-//done
+// Quick access to commands
+// 1
+// A4972MA
+// Petar Dimitrov
+// Changing the spark plugs
+// four hundred
+// 400
+// two
+// 2
+// spark plugs - 4ps.
+// done
 //
-//2
+// 2
 //
+// 3 
+// PB7762AH
 //
-//3
-//PB7762AH
+// 3
+// B0055EA
 //
-//3
-//B0055EA
-//
-//4
+// 4
 
  
 
