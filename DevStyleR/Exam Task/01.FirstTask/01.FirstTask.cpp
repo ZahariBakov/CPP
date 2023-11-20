@@ -2,15 +2,15 @@
 #include <vector>
 #include <string>
 
-// RepairRecord structure
-struct RepairRecord {
-    std::string licensePlate;
-    std::string ownerName;
-    std::string repairDescription;
-    double repairCost;
-    std::vector<std::string> partsUsed;
-    int laborHours;
-};
+    // RepairRecord structure
+    struct RepairRecord {
+        std::string licensePlate;
+        std::string ownerName;
+        std::string repairDescription;
+        double repairCost;
+        std::vector<std::string> partsUsed;
+        int laborHours;
+    };
 
 // Function to add a new repair record
 void addRepairRecord(std::vector<RepairRecord>& records) {
@@ -107,7 +107,11 @@ const RepairRecord* searchByLicensePlate(const std::vector<RepairRecord>& record
 
 // Main function
 int main() {
-    std::vector<RepairRecord> repairRecords;
+    // Initial values
+    std::vector<RepairRecord> repairRecords = {
+        {"CA1245PK", "Ivan Petrov", "Oil Change", 180.0, {"Oil", "Filter"}, 3},
+        {"PB7762AH", "Maria Stoianova", "Brake Replacement", 300.0, {"Brake Pads", "Brake Fluid"}, 5},
+    };
 
     int choice;
     do {
@@ -165,5 +169,153 @@ int main() {
 }
 
 
-//TODO...
+// TODO...
 // Demo - how the values changing.
+// Run program
+// Now you see option menu:
+// ---- Car Repair Shop Management System ----
+// 1. Add Repair Record
+// 2. Display All Repair Records
+// 3. Search for Repair Record by License Plate
+// 4. Exit
+// Enter your choice :
+// 
+// ---------------------------------------------------------
+// 
+// Let's add a new vehicle to our database.
+// 
+// Now choose option:
+// 1 
+// Then you see this text "Enter license plate number: "
+// A4972MA
+// 
+// Then you see this text "Enter owner's name: "
+// Petar Dimitrov
+// 
+// Then you see this text "Enter repair description: "
+// Changing the spark plugs
+// 
+// Then you see this text "Enter repair cost: "
+// Four hundred
+// 
+// Then you see this text "Invalid input. Please enter a valid number for repair cost: "
+// 400
+// 
+// Then you see this text "Enter the number of labor hours: "
+// two
+// 
+// Then you see this text "Invalid input. Please enter a valid number for labor hours: "
+// 2
+// Then you see this text  "Enter parts used (enter 'done' when finished):"
+//                            -
+// spark plugs - 4ps.
+// done
+// Then you see this text "Repair record added successfully."
+// 
+// Then you will return to optpion menu.
+// 
+// ---------------------------------------------------------
+// 
+// Let's now look at all the vehicles in our database.
+// Now choose option:
+// 2
+// And now you see this text:
+// 
+// ---- All Repair Records ----
+// License Plate: CA1245PK
+// Owner's Name: Ivan Petrov
+// Repair Description : Oil CHange
+// Repair Cost : 180
+// Labor Hours : 3
+// Parts Used :
+// -Oil
+// - Filter
+// ----------------------------
+// License Plate : PB7762AH
+// Owner's Name: Maria Stoianova
+// Repair Description : Brake Replacement
+// Repair Cost : 300
+// Labor Hours : 5
+// Parts Used :
+// -Brake Pads
+// - Brake Fluid
+// ----------------------------
+// License Plate : A4972MA
+// Owner's Name: Petar Dimitrov
+// Repair Description : Changing the spark plugs
+// Repair Cost : 400
+// Labor Hours : 2
+// Parts Used :
+// -spark
+// - plugs
+// - -
+// -4ps.
+//----------------------------
+// 
+// And again go back to option menu.
+// 
+// ---------------------------------------------------------
+//
+// Let's now search for a vehicle by registration number.
+// 
+// Now choose option:
+// 3
+// Now you see this text "Enter license plate number to search: "
+// PB7762AH
+// 
+// And now you see this text:
+// 
+// Record found:
+// License Plate : PB7762AH
+// Owner's Name: Maria Stoianova
+// Repair Description : Brake Replacement
+// Repair Cost : 300
+// Labor Hours : 5
+// Parts Used :
+// -Brake Pads
+// - Brake Fluid
+// 
+// And again go back to option menu.
+// 
+// ---------------------------------------------------------
+// 
+// Let's now search for a vehicle with a wrong license plate.
+// Now choose option:
+// 3
+// Now you see this text "Enter license plate number to search: "
+// B0055EA
+// 
+// Now you see this text "Record not found."
+// 
+// And again go back to option menu.
+// 
+// Now choose option:
+// 4
+// 
+// Exit program
+
+//Quick access to commands
+//1
+//A4972MA
+//Petar Dimitrov
+//Changing the spark plugs
+//four hundred
+//400
+//two
+//2
+//spark plugs - 4ps.
+//done
+//
+//2
+//
+//
+//3
+//PB7762AH
+//
+//3
+//B0055EA
+//
+//4
+
+ 
+
