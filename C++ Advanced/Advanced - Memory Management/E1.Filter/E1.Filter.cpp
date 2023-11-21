@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <functional>
 
 void print(const std::vector<int>& v) {
     for (const int item : v) {
@@ -16,7 +17,7 @@ void print(const std::vector<int>& v) {
 // negative Numbers
 
 std::vector<int> filter(const std::vector<int>& numbers, 
-                        bool (*shouldFilter)(int number)) {
+                        const std::function<bool(int number)>& shouldFilter) {
     std::vector<int> filtered;
 
     for (const int currNumber : numbers) {
@@ -32,7 +33,7 @@ bool isBiggerThan3(int number) {
     return number > 3;
 }
 
-bool isBNumnerEven(int number) {
+bool isNumberEven(int number) {
     return number % 2 == 0;
 }
 
@@ -41,18 +42,22 @@ int main() {
     std::vector<int> vec = filter(initialVec, isBiggerThan3);
     print(vec);
 
-    vec = filter(initialVec, isBNumnerEven);
+    vec = filter(initialVec, isNumberEven);
     print(vec);
 
-    vec = filter(initialVec, [](int number) {
+    /*vec = filter(initialVec, [](int number) {
         return number < 0;
         });
-    print(vec);
+    print(vec);*/
 
-    std::vector<int> arr{ 0, -4, 2 };
+    std::function<bool(int number)> isNegativeNimber = [](int number) {
+        return number < 0;
+        };
+
+    /*std::vector<int> arr{ 0, -4, 2 };
     std::vector<std::pair<int, int>> arrPairs(3);
 
-    for (int i = 0; i < arr.size(); ++i) {
+    for (int i = 0; i < (int)arr.size(); ++i) {
         arrPairs[i].first = arr[i];
         arrPairs[i].second = i;
     }
@@ -64,7 +69,11 @@ int main() {
 
     for (const auto& pair : arrPairs) {
         std::cout << pair.first << ' ' << pair.second << std::endl;
-    }
+    }*/
+
+    vec = filter(initialVec, isNegativeNimber);
+
+    print(vec);
 
     return 0;
 }
