@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06.Minesweeper", "06.Minesw
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00.SizeOfDemos", "00.SizeOfDemos\00.SizeOfDemos.vcxproj", "{EDB8B551-FA4B-46C8-817D-14B9F9F54211}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.RemoveNegativesАndReverse", "02.RemoveNegativesАndReverse\02.RemoveNegativesАndReverse.vcxproj", "{6B048D55-42CB-4791-99DF-96029516AEC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{EDB8B551-FA4B-46C8-817D-14B9F9F54211}.Release|x64.Build.0 = Release|x64
 		{EDB8B551-FA4B-46C8-817D-14B9F9F54211}.Release|x86.ActiveCfg = Release|Win32
 		{EDB8B551-FA4B-46C8-817D-14B9F9F54211}.Release|x86.Build.0 = Release|Win32
+		{6B048D55-42CB-4791-99DF-96029516AEC9}.Debug|x64.ActiveCfg = Debug|x64
+		{6B048D55-42CB-4791-99DF-96029516AEC9}.Debug|x64.Build.0 = Debug|x64
+		{6B048D55-42CB-4791-99DF-96029516AEC9}.Debug|x86.ActiveCfg = Debug|Win32
+		{6B048D55-42CB-4791-99DF-96029516AEC9}.Debug|x86.Build.0 = Debug|Win32
+		{6B048D55-42CB-4791-99DF-96029516AEC9}.Release|x64.ActiveCfg = Release|x64
+		{6B048D55-42CB-4791-99DF-96029516AEC9}.Release|x64.Build.0 = Release|x64
+		{6B048D55-42CB-4791-99DF-96029516AEC9}.Release|x86.ActiveCfg = Release|Win32
+		{6B048D55-42CB-4791-99DF-96029516AEC9}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
