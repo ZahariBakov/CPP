@@ -76,12 +76,28 @@ bool isInBoundary(int rows, int cols, int currRow, int currCol) {
 }
 
 void expandMine(int** intArr2D, int rows, int cols, int currRow, int currCol) {
-    const bool isInBound = isInBoundary(rows, cols, currRow, currCol);
-    if (!isInBound) {
-        return;
-    }
+    const int dirCount = 9;
+    const int directions[dirCount][2]{
+        { 0, 0}, // current position
+        { 0, 1}, // right
+        { 1, 1}, // down right
+        { 1, 0}, // down 
+        { 1, -1}, // down left
+        { 0, -1}, // left 
+        { -1, -1}, // up left
+        { -1, 0}, // up 
+        { -1, 1}, // up right
+    };
 
-    intArr2D[currRow][currCol]++;
+    for (int i = 0; i < dirCount; ++i) {
+        const int newRow = currRow + directions[i][0];
+        const int newCol = currCol + directions[i][1];
+
+        const bool isInBound = isInBoundary(rows, cols, newRow, newCol);
+        if (isInBound) {
+            intArr2D[newRow][newCol]++;
+        }
+    }
 }
 
 void processMines(char** charArr2D, int rows, int cols,
@@ -94,15 +110,7 @@ void processMines(char** charArr2D, int rows, int cols,
                 continue;
             }
 
-            expandMine(intArr2D, rows, cols, row, col); // here
-            expandMine(intArr2D, rows, cols, row - 1, col); // up
-            expandMine(intArr2D, rows, cols, row + 1, col); // down
-            expandMine(intArr2D, rows, cols, row, col - 1); // left
-            expandMine(intArr2D, rows, cols, row, col + 1); // right
-            expandMine(intArr2D, rows, cols, row - 1, col - 1); // up and left
-            expandMine(intArr2D, rows, cols, row + 1, col - 1); // down and left
-            expandMine(intArr2D, rows, cols, row - 1, col + 1); // up and right
-            expandMine(intArr2D, rows, cols, row + 1, col + 1); // down and right
+            expandMine(intArr2D, rows, cols, row, col); 
         }
     }
 }
