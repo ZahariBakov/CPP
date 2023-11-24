@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.RemoveNegativesАndRever
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.PrintInParts", "03.PrintInParts\03.PrintInParts.vcxproj", "{77C3BD51-59E2-4D12-A42A-2AB095460BE6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04.SomeOrdering", "04.SomeOrdering\04.SomeOrdering.vcxproj", "{889D68ED-6237-4949-AFF2-1EA0CD132A11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{77C3BD51-59E2-4D12-A42A-2AB095460BE6}.Release|x64.Build.0 = Release|x64
 		{77C3BD51-59E2-4D12-A42A-2AB095460BE6}.Release|x86.ActiveCfg = Release|Win32
 		{77C3BD51-59E2-4D12-A42A-2AB095460BE6}.Release|x86.Build.0 = Release|Win32
+		{889D68ED-6237-4949-AFF2-1EA0CD132A11}.Debug|x64.ActiveCfg = Debug|x64
+		{889D68ED-6237-4949-AFF2-1EA0CD132A11}.Debug|x64.Build.0 = Debug|x64
+		{889D68ED-6237-4949-AFF2-1EA0CD132A11}.Debug|x86.ActiveCfg = Debug|Win32
+		{889D68ED-6237-4949-AFF2-1EA0CD132A11}.Debug|x86.Build.0 = Debug|Win32
+		{889D68ED-6237-4949-AFF2-1EA0CD132A11}.Release|x64.ActiveCfg = Release|x64
+		{889D68ED-6237-4949-AFF2-1EA0CD132A11}.Release|x64.Build.0 = Release|x64
+		{889D68ED-6237-4949-AFF2-1EA0CD132A11}.Release|x86.ActiveCfg = Release|Win32
+		{889D68ED-6237-4949-AFF2-1EA0CD132A11}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
