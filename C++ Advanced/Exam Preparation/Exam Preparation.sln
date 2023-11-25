@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34302.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.Letters", "01.Letters\01.Letters.vcxproj", "{061F02A8-93D6-4F5F-B77A-3068CFF07965}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.Rust", "02.Rust\02.Rust.vcxproj", "{8FCA208A-32F6-48D8-B8C2-CA38C8816048}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{061F02A8-93D6-4F5F-B77A-3068CFF07965}.Release|x64.Build.0 = Release|x64
 		{061F02A8-93D6-4F5F-B77A-3068CFF07965}.Release|x86.ActiveCfg = Release|Win32
 		{061F02A8-93D6-4F5F-B77A-3068CFF07965}.Release|x86.Build.0 = Release|Win32
+		{8FCA208A-32F6-48D8-B8C2-CA38C8816048}.Debug|x64.ActiveCfg = Debug|x64
+		{8FCA208A-32F6-48D8-B8C2-CA38C8816048}.Debug|x64.Build.0 = Debug|x64
+		{8FCA208A-32F6-48D8-B8C2-CA38C8816048}.Debug|x86.ActiveCfg = Debug|Win32
+		{8FCA208A-32F6-48D8-B8C2-CA38C8816048}.Debug|x86.Build.0 = Debug|Win32
+		{8FCA208A-32F6-48D8-B8C2-CA38C8816048}.Release|x64.ActiveCfg = Release|x64
+		{8FCA208A-32F6-48D8-B8C2-CA38C8816048}.Release|x64.Build.0 = Release|x64
+		{8FCA208A-32F6-48D8-B8C2-CA38C8816048}.Release|x86.ActiveCfg = Release|Win32
+		{8FCA208A-32F6-48D8-B8C2-CA38C8816048}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
