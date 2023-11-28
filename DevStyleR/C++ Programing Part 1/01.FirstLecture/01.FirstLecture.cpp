@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 int main() {
 
@@ -120,11 +121,11 @@ int main() {
 
         // §  , || , bool
 
-    int age;
+    /*int age;
     int exp;
     std::cout << "Enter your age." << std::endl;
     std::cin >> age;
-    std::cin >> exp;
+    std::cin >> exp;*/
 
     // logical AND
     // a       true    false    true     false    age > 30
@@ -132,14 +133,140 @@ int main() {
     // 
     // resule  true    false    false    false
 
-    if (age > 30 && exp > 5) {
+    /*if (age > 30 && exp > 5) {
         std::cout << "Bonus 50lv." << std::endl;
     }
     else {
         std::cout << "No bonus." << std::endl;
+    }*/
+
+    // std::cout << "Hello World!" << std::endl;
+
+    // Apartament per floor
+    int appPerFloor = 0;
+    std::cout << "Enter how many apartments there are per floor. ";
+    std::cin >> appPerFloor;
+
+    // Searching apartment number
+    int searchingApp = 0;
+    std::cout << "Enter which apartment number you are looking for. ";
+    std::cin >> searchingApp;
+
+
+    int floor = 1;
+    int apartment = 0;
+
+    apartment = searchingApp % appPerFloor;
+
+    if (apartment == 0) {
+        floor = searchingApp / appPerFloor;
+        apartment = appPerFloor;
+    }
+    else {
+        floor += searchingApp / appPerFloor;
     }
 
-    std::cout << "Hello World!" << std::endl;
+    std::string floorStr;
+    switch (floor) {
+    case 1: 
+        floorStr = "first";
+        break;
+    case 2:
+        floorStr = "second";
+        break;
+    case 3:
+        floorStr = "third";
+        break;
+    case 4:
+        floorStr = "fourth";
+        break;
+    case 5:
+        floorStr = "fifth";
+        break;
+    case 6:
+        floorStr = "sixth";
+        break;
+    case 7:
+        floorStr = "seventh";
+        break;
+    case 8:
+        floorStr = "eighth";
+        break;
+    case 9:
+        floorStr = "ninth";
+        break;
+    case 10:
+        floorStr = "tenth";
+        break;
+    case 11:
+        floorStr = "eleventh";
+        break;
+    case 12:
+        floorStr = "twelfth";
+        break;
+    case 13:
+        floorStr = "thirteenth";
+        break;
+    case 14:
+        floorStr = "fourteenth";
+        break;
+    case 15:
+        floorStr = "fifteenth";
+        break;
+    case 16:
+        floorStr = "sixteenth";
+        break;
+    case 17:
+        floorStr = "seventeenth";
+        break;
+    case 18:
+        floorStr = "eighteenth";
+        break;
+    case 19:
+        floorStr = "nineteenth";
+        break;
+    case 20:
+        floorStr = "twentieth";
+        break;
+    case 21:
+        floorStr = "twenty - first";
+        break;
+    case 22:
+        floorStr = "twenty - second";
+        break;
+    case 23:
+        floorStr = "twenty - third";
+        break;
+    case 24:
+        floorStr = "twenty - fourth";
+        break;
+    case 25:
+        floorStr = "twenty - fifth";
+        break;
+    case 26:
+        floorStr = "twenty - sixth";
+        break;
+    case 27:
+        floorStr = "twenty - seventh";
+        break;
+    case 28:
+        floorStr = "twenty - eighth";
+        break;
+    case 29:
+        floorStr = "twenty - ninth";
+        break;                  
+   default:
+        floorStr = "It's too tall a building!";
+        break;
+    }
 
+    if (floor < 30) {
+        std::cout << "The apartment you are looking for is on the " << floorStr << " floor. " << '\n';
+        std::cout << "It is " << apartment << " apartment on the floor." << std::endl;
+    }
+    else {
+        std::cout << floorStr << std::endl;
+    }
+    
     return 0;
 }
