@@ -97,13 +97,10 @@ public:
     }
 
     void act() {
-        // Find nearset human.
+        // Find nearest human.
         const size_t clossestHumanIdx = mAsh.getClosestHumanIdx();
         const Unit& clossestHuman = mHumans[clossestHumanIdx];
         std::cout << clossestHuman.pos.x << " " << clossestHuman.pos.y << std::endl;
-        
-        // This is static coordinates for first solution
-        //std::cout << "8000 5000" << std::endl;
     }
 
     bool isRuning() {
