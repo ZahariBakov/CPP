@@ -261,7 +261,7 @@ int main() {
     }
 
     if (floor < 30) {
-        std::cout << "The apartment you are looking for is on the " << floorStr << " floor. " << '\n';
+        std::cout << "The apartment you are looking for is on the " << floorStr << " floor." << '\n';
         std::cout << "It is " << apartment << " apartment on the floor." << std::endl;
     }
     else {
