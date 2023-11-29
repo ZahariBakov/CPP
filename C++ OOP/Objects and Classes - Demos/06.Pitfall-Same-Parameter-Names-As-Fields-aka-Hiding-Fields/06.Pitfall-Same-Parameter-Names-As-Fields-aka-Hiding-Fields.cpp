@@ -7,20 +7,19 @@ public:
     int age = 0;
     double heightMeters = 0;
 
-    // Name shadowing
-    // Person(std::string name, int age, double heightMeters) {
-    //     name = name;
-    //     age = age;
-    //     heightMeters = heightMeters;
-    // }
+     Person(std::string inputName, int inputAge, double inputHeightMeters) {
+         name = inputName;
+         age = inputAge;
+         heightMeters = inputHeightMeters;
+     }
 
     // Correct way (for using constructor body) - explicitly accessing the fields
     // through the "this" pointer
-    Person(std::string name, int age, double heightMeters) {
-        this->name = name;
-        this->age = age;
-        this->heightMeters = heightMeters;
-    }
+    // Person(std::string name, int age, double heightMeters) {
+    //     this->name = name;
+    //     this->age = age;
+    //     this->heightMeters = heightMeters;
+    // }
 };
 
 void printPersonInfo(const Person person) {
