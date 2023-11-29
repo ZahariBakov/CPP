@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06.Pitfall-Same-Parameter-N
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07.Constructor-Initializer-List", "07.Constructor-Initializer-List\07.Constructor-Initializer-List.vcxproj", "{61D965C7-8AAE-4D85-ADDB-6FC3EEBCF722}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08.Simple-Methods", "08.Simple-Methods\08.Simple-Methods.vcxproj", "{C019BFCA-AC63-4440-B3F2-ACBAA1F56542}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{61D965C7-8AAE-4D85-ADDB-6FC3EEBCF722}.Release|x64.Build.0 = Release|x64
 		{61D965C7-8AAE-4D85-ADDB-6FC3EEBCF722}.Release|x86.ActiveCfg = Release|Win32
 		{61D965C7-8AAE-4D85-ADDB-6FC3EEBCF722}.Release|x86.Build.0 = Release|Win32
+		{C019BFCA-AC63-4440-B3F2-ACBAA1F56542}.Debug|x64.ActiveCfg = Debug|x64
+		{C019BFCA-AC63-4440-B3F2-ACBAA1F56542}.Debug|x64.Build.0 = Debug|x64
+		{C019BFCA-AC63-4440-B3F2-ACBAA1F56542}.Debug|x86.ActiveCfg = Debug|Win32
+		{C019BFCA-AC63-4440-B3F2-ACBAA1F56542}.Debug|x86.Build.0 = Debug|Win32
+		{C019BFCA-AC63-4440-B3F2-ACBAA1F56542}.Release|x64.ActiveCfg = Release|x64
+		{C019BFCA-AC63-4440-B3F2-ACBAA1F56542}.Release|x64.Build.0 = Release|x64
+		{C019BFCA-AC63-4440-B3F2-ACBAA1F56542}.Release|x86.ActiveCfg = Release|Win32
+		{C019BFCA-AC63-4440-B3F2-ACBAA1F56542}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
