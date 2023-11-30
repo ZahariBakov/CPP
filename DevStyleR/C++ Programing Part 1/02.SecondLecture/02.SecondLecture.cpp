@@ -169,12 +169,55 @@ int main() {
     std::cout << "a: " << a << " b: " << b << std::endl;*/
 
     // Celsius to Fahrenheit.
-    double celsius;
+    /*double celsius;
     std::cout << "Enter degree in Celsius: "; 
     std::cin >> celsius;
 
     double fahrenheit = (celsius * (9.0 / 5)) + 32;
-    std::cout << "Degree in Fahrenheit is: " << fahrenheit << std::endl;
+    std::cout << "Degree in Fahrenheit is: " << fahrenheit << std::endl;*/
+
+    // Print the numbers one by one
+    int number = 0;
+    std::cout << "Enter number: ";
+    std::cin >> number;
+
+    int temp = 0;
+
+    while (number > 0) {
+        temp *= 10;
+        temp += number % 10;
+        number /= 10;
+    }
+
+    while (temp > 0) {
+        std::cout << (temp % 10) << std::endl;
+        temp /= 10;
+    }
+
+
+    return 0;
+}
+
+#include <iostream>
+
+int main() {
+    int number = 0;
+    std::cout << "Enter number: ";
+    std::cin >> number;
+
+    int temp = 0;
+
+    while (number > 0) {
+        temp *= 10;
+        temp += number % 10;
+        number /= 10;
+    }
+
+    while (temp > 0) {
+        std::cout << (temp % 10) << std::endl;
+        temp /= 10;
+    }
+
 
     return 0;
 }
