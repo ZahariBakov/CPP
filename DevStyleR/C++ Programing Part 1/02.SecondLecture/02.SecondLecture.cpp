@@ -197,27 +197,3 @@ int main() {
 
     return 0;
 }
-
-#include <iostream>
-
-int main() {
-    int number = 0;
-    std::cout << "Enter number: ";
-    std::cin >> number;
-
-    int temp = 0;
-
-    while (number > 0) {
-        temp *= 10;
-        temp += number % 10;
-        number /= 10;
-    }
-
-    while (temp > 0) {
-        std::cout << (temp % 10) << std::endl;
-        temp /= 10;
-    }
-
-
-    return 0;
-}
