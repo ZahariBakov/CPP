@@ -32,6 +32,7 @@ int main() {
     for (std::string s : SoftUni::CppFundamentals::lectures) {
         std::cout << s << std::endl;
     }
+    std::cout << std::endl;
 
     std::cout << "=== C++ Advanced ===" << std::endl;
     for (std::string s : SoftUni::CppAdvanced::lectures) {
