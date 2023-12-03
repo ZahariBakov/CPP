@@ -206,18 +206,91 @@
 
 // 07.Number Pattern
 
+//int main() {
+//    int number;
+//    std::cout << "Enter number: ";
+//    std::cin >> number;
+//
+//    for (int i = 1; i <= number; ++i) {
+//        for (int j = 0; j < i; ++j) {
+//            std::cout << i;
+//        }
+//        std::cout  << std::endl;
+//    }
+//
+//    return 0;
+//}
+
+
+// 08.Spiral Pattern
+
 int main() {
     int number;
     std::cout << "Enter number: ";
     std::cin >> number;
+    int firstCol = number * 2 - 1;
 
-    for (int i = 1; i <= number; ++i) {
-        for (int j = 0; j < i; ++j) {
-            std::cout << i;
+    int secondRowLength = 0;
+    int currNum = firstCol + 1;
+
+    for (int x = 0; x < number; ++x) {
+
+        if (currNum > 9) {
+            secondRowLength += 2;
         }
-        std::cout  << std::endl;
+        else {
+            secondRowLength += 1;
+        }
+
+        if (secondRowLength >= number) {
+            break;
+        }
+
+        currNum++;
+    }
+
+    int secondColNums = currNum + (number - 1);
+    int freeSpaces;
+    int lastNum = secondColNums;
+
+    // Printing first row
+    for (int i = 1; i <= number; ++i) {
+        std::cout << i;
+    }
+  
+    std::cout << std::endl;
+
+    // Printing cols
+    for (int j = number + 1; j <= firstCol; ++j) {
+        std::cout << lastNum;
+
+        if (lastNum > 9) {
+            freeSpaces = number - 2;
+        }
+        else {
+            freeSpaces = number - 1;
+        }
+
+        if (j > 9) {
+            freeSpaces -= 2;
+        }
+        else {
+            freeSpaces -= 1;
+        }
+
+
+        for (int k = 0; k < freeSpaces; ++k) {
+            std::cout << " ";
+        }
+
+        std::cout << j << std::endl;
+        lastNum--;
+    }
+   
+    // Printng second row
+    for (int y = currNum; y > firstCol; --y) {
+        std::cout << y;
     }
 
     return 0;
 }
-
