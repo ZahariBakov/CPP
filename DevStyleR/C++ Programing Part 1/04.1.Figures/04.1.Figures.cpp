@@ -125,63 +125,99 @@
 
 // 05.X Pattern
 
-int main() {
-    int number;
-    std::cout << "Enter number: ";
-    std::cin >> number;
-    int freeSpaces = number - 2;
+//int main() {
+//    int number;
+//    std::cout << "Enter number: ";
+//    std::cin >> number;
+//    int freeSpaces = number - 2;
+//
+//    for (int i = 0; i < number / 2; ++i) {
+//        for (int k = 0; k < i; ++k) {
+//            std::cout << " ";
+//        }
+//                
+//        std::cout << "*";
+//
+//        for (int j = 0; j < freeSpaces; ++j) {
+//            std::cout << " ";
+//        }
+//
+//        std::cout << "*";
+//
+//        std::cout << std::endl;
+//        freeSpaces -= 2;
+//    }
+//
+//    for (int i = 0; i < number / 2; ++i) {
+//        std::cout << " ";
+//    }
+//
+//    std::cout << "*" << std::endl;
+//
+//    freeSpaces = 1;
+//
+//    for (int i = 1; i <= number / 2; ++i) {
+//        for (int k = number / 2; k > i; --k) {
+//            std::cout << " ";
+//        }
+//
+//        std::cout << "*";
+//
+//        for (int j = 0; j < freeSpaces; ++j) {
+//            std::cout << " ";
+//        }
+//
+//        std::cout << "*";
+//    
+//        std::cout << std::endl;
+//        freeSpaces += 2;
+//    }    
+//
+//    return 0;
+//}
 
-    for (int i = 0; i < number / 2; ++i) {
-        for (int k = 0; k < i; ++k) {
-            std::cout << " ";
-        }
-                
-        std::cout << "*";
 
-        for (int j = 0; j < freeSpaces; ++j) {
-            std::cout << " ";
-        }
-
-        std::cout << "*";
-
-        std::cout << std::endl;
-        freeSpaces -= 2;
-    }
-
-    for (int i = 0; i < number / 2; ++i) {
-        std::cout << " ";
-    }
-
-    std::cout << "*" << std::endl;
-
-    freeSpaces = 1;
-
-    for (int i = 1; i <= number / 2; ++i) {
-        for (int k = number / 2; k > i; --k) {
-            std::cout << " ";
-        }
-
-        std::cout << "*";
-
-        for (int j = 0; j < freeSpaces; ++j) {
-            std::cout << " ";
-        }
-
-        std::cout << "*";
-    
-        std::cout << std::endl;
-        freeSpaces += 2;
-    }    
-
-    return 0;
-}
-
-
+// 06.Checkerboard
 
 //int main() {
 //    int number;
 //    std::cout << "Enter number: ";
 //    std::cin >> number;
 //
+//    for (int row = 1; row <= number; ++row) {
+//
+//        if (row & 1 == 1) {
+//            for (int j = 0; j < number; ++j) {
+//                std::cout << "* ";
+//            }
+//        }
+//        else {
+//            for (int k = 0; k < number; ++k) {
+//                std::cout << " *";
+//            }
+//        }
+//
+//        std::cout << std::endl;        
+//    }
+//
 //    return 0;
 //}
+
+
+// 07.Number Pattern
+
+int main() {
+    int number;
+    std::cout << "Enter number: ";
+    std::cin >> number;
+
+    for (int i = 1; i <= number; ++i) {
+        for (int j = 0; j < i; ++j) {
+            std::cout << i;
+        }
+        std::cout  << std::endl;
+    }
+
+    return 0;
+}
+
