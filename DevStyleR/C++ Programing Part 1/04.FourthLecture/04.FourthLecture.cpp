@@ -154,7 +154,7 @@
 //
 //    return 0;
 //}
-    
+
 // 09.All numbers from 1 to N that i ^ i < N.
 //int main() {
 //    int n;
@@ -172,6 +172,7 @@
 // Homework:
 
 // 01.All numbers from 1 to num that i ^ pow < num.
+
 //int main() {
 //    int num;
 //    int pow;
@@ -211,18 +212,16 @@ int main() {
     int num;
     std::cout << "Enter a number: ";
     std::cin >> num;
-    int symbol = 1;
 
-    for (int i = 0; i < num; ++i) {
-        for (int k = num - 1; k > i; --k) {
+    for (int i = 0; i <= num; ++i) {
+        for (int k = num; k > i; --k) {
             std::cout << ' ';
         }
 
-        for (int j = 0; j < symbol; ++j) {
+        for (int j = 0; j <= i; ++j) {
             std::cout << "*";
         }
         std::cout << std::endl;
-        ++symbol;
     }
 
     return 0;
