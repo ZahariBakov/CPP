@@ -1,6 +1,11 @@
 #include <iostream>
 
 // 01.Pyramid
+//*
+//***
+//*****
+//*******
+//*********
 
 //int main() {
 //    int number;
@@ -26,6 +31,11 @@
 
 
 // 02.Hourglass
+//*********
+//*******
+//*****
+//***
+//*
 
 //int main() {
 //    int number;
@@ -51,6 +61,15 @@
 
 
 // 03.Diamond
+//*
+//***
+//*****
+//*******
+//*********
+//*******
+//*****
+//***
+//*
 
 //int main() {
 //    int number;
@@ -91,6 +110,11 @@
 
 
 // 04.Cross Pattern
+//  *
+//  *
+//*****
+//  *
+//  *
 
 //int main() {
 //    int number;
@@ -124,6 +148,11 @@
 
 
 // 05.X Pattern
+//*   *
+// * *
+//  *
+// * *
+//*   *
 
 //int main() {
 //    int number;
@@ -178,6 +207,11 @@
 
 
 // 06.Checkerboard
+//* * * * *
+// * * * * *
+//* * * * *
+// * * * * *
+//* * * * *
 
 //int main() {
 //    int number;
@@ -205,6 +239,11 @@
 
 
 // 07.Number Pattern
+//1
+//22
+//333
+//4444
+//55555
 
 //int main() {
 //    int number;
@@ -223,6 +262,12 @@
 
 
 // 08.Spiral Pattern
+//12345
+//16  6
+//15  7
+//14  8
+//13  9
+//121110
 
 int main() {
     int number;
@@ -257,7 +302,7 @@ int main() {
     for (int i = 1; i <= number; ++i) {
         std::cout << i;
     }
-  
+
     std::cout << std::endl;
 
     // Printing cols
@@ -286,7 +331,7 @@ int main() {
         std::cout << j << std::endl;
         lastNum--;
     }
-   
+
     // Printng second row
     for (int y = currNum; y > firstCol; --y) {
         std::cout << y;
