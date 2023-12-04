@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09.ComparisonOperatorOverlo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10.PitfallMissingConstOnOverloadForSTL", "10.PitfallMissingConstOnOverloadForSTL\10.PitfallMissingConstOnOverloadForSTL.vcxproj", "{FA4101CB-2368-401E-9A84-D7DFECEDFCF9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "E2.Fraction", "E2.Fraction\E2.Fraction.vcxproj", "{42683B85-4E50-49D3-B255-E9E4F1E54C1D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{FA4101CB-2368-401E-9A84-D7DFECEDFCF9}.Release|x64.Build.0 = Release|x64
 		{FA4101CB-2368-401E-9A84-D7DFECEDFCF9}.Release|x86.ActiveCfg = Release|Win32
 		{FA4101CB-2368-401E-9A84-D7DFECEDFCF9}.Release|x86.Build.0 = Release|Win32
+		{42683B85-4E50-49D3-B255-E9E4F1E54C1D}.Debug|x64.ActiveCfg = Debug|x64
+		{42683B85-4E50-49D3-B255-E9E4F1E54C1D}.Debug|x64.Build.0 = Debug|x64
+		{42683B85-4E50-49D3-B255-E9E4F1E54C1D}.Debug|x86.ActiveCfg = Debug|Win32
+		{42683B85-4E50-49D3-B255-E9E4F1E54C1D}.Debug|x86.Build.0 = Debug|Win32
+		{42683B85-4E50-49D3-B255-E9E4F1E54C1D}.Release|x64.ActiveCfg = Release|x64
+		{42683B85-4E50-49D3-B255-E9E4F1E54C1D}.Release|x64.Build.0 = Release|x64
+		{42683B85-4E50-49D3-B255-E9E4F1E54C1D}.Release|x86.ActiveCfg = Release|Win32
+		{42683B85-4E50-49D3-B255-E9E4F1E54C1D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
