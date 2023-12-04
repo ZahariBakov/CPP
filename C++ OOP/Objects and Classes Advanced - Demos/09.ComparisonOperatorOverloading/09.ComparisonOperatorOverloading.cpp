@@ -29,8 +29,9 @@ int main() {
     // if(a < b) is false and (b < a) is false;
     // then (a == b) is true and will not add 2/6,
     // because it already has the equivalent value 1/3 inthe set.
-    std::set<Fraction> fractions
-    { Fraction { 1, 3 }, Fraction { 2, 10 }, Fraction { 2, 6 } };
+    std::set<Fraction> fractions { 
+        Fraction { 1, 3 }, Fraction { 2, 10 }, Fraction { 2, 6 } 
+    };
 
     // Do not do this!!!
     //for (Fraction f : fractions) {
