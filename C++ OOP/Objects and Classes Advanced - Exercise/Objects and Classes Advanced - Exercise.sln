@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.Car", "01.Car\01.Car.vcxproj", "{285CB150-128A-4B72-BC56-44CDAFFB2426}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.SumOfVectors", "02.SumOfVectors\02.SumOfVectors.vcxproj", "{218E96E2-157E-4313-BEFE-B9304AA6C26B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{285CB150-128A-4B72-BC56-44CDAFFB2426}.Release|x64.Build.0 = Release|x64
 		{285CB150-128A-4B72-BC56-44CDAFFB2426}.Release|x86.ActiveCfg = Release|Win32
 		{285CB150-128A-4B72-BC56-44CDAFFB2426}.Release|x86.Build.0 = Release|Win32
+		{218E96E2-157E-4313-BEFE-B9304AA6C26B}.Debug|x64.ActiveCfg = Debug|x64
+		{218E96E2-157E-4313-BEFE-B9304AA6C26B}.Debug|x64.Build.0 = Debug|x64
+		{218E96E2-157E-4313-BEFE-B9304AA6C26B}.Debug|x86.ActiveCfg = Debug|Win32
+		{218E96E2-157E-4313-BEFE-B9304AA6C26B}.Debug|x86.Build.0 = Debug|Win32
+		{218E96E2-157E-4313-BEFE-B9304AA6C26B}.Release|x64.ActiveCfg = Release|x64
+		{218E96E2-157E-4313-BEFE-B9304AA6C26B}.Release|x64.Build.0 = Release|x64
+		{218E96E2-157E-4313-BEFE-B9304AA6C26B}.Release|x86.ActiveCfg = Release|Win32
+		{218E96E2-157E-4313-BEFE-B9304AA6C26B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
