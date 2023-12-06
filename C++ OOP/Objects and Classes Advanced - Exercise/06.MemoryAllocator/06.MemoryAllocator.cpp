@@ -1,13 +1,13 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include <iostream>
+#include <sstream>
 
 #include "Defines.h"
 
 constexpr auto ALLOCATE_CMD = "Allocate";
 constexpr auto DEALLOCATE_CMD = "Deallocate";
-constexpr auto IDLE_CMD = "IDLE";
+constexpr auto IDLE_CMD = "Idle";
 
 size_t getIndexFromCommand(const std::string& command) {
 	int index = 0;
@@ -61,7 +61,7 @@ ErrorCode executeCommand(const std::string& command,
 		return handleDeallocate(memory, index);
 	}
 
-	std::cerr << "received invalid Command:" << command;
+	std::cerr << "received invalid Command: " << command;
 	return ErrorCode::EXECUTE_IDLE;
 }
 
@@ -89,4 +89,6 @@ void printResult(const ErrorCode     errorCode,
 		std::cerr << "Received invalid errorCode: " << errorCode;
 		break;
 	}
+
+	std::cout << std::endl;
 }
