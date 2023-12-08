@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.IncludeAndDefine", "01.I
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.ConditionalInclusionsAndIncludeGuards", "03.ConditionalInclusionsAndIncludeGuards\03.ConditionalInclusionsAndIncludeGuards.vcxproj", "{365B8E1F-F268-45F8-B80D-48E950421E24}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.PitfallMacrosBracketsInExpressions", "02.PitfallMacrosBracketsInExpressions\02.PitfallMacrosBracketsInExpressions.vcxproj", "{95CF3931-CBD9-4A2B-9692-173A72DAC8C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{365B8E1F-F268-45F8-B80D-48E950421E24}.Release|x64.Build.0 = Release|x64
 		{365B8E1F-F268-45F8-B80D-48E950421E24}.Release|x86.ActiveCfg = Release|Win32
 		{365B8E1F-F268-45F8-B80D-48E950421E24}.Release|x86.Build.0 = Release|Win32
+		{95CF3931-CBD9-4A2B-9692-173A72DAC8C3}.Debug|x64.ActiveCfg = Debug|x64
+		{95CF3931-CBD9-4A2B-9692-173A72DAC8C3}.Debug|x64.Build.0 = Debug|x64
+		{95CF3931-CBD9-4A2B-9692-173A72DAC8C3}.Debug|x86.ActiveCfg = Debug|Win32
+		{95CF3931-CBD9-4A2B-9692-173A72DAC8C3}.Debug|x86.Build.0 = Debug|Win32
+		{95CF3931-CBD9-4A2B-9692-173A72DAC8C3}.Release|x64.ActiveCfg = Release|x64
+		{95CF3931-CBD9-4A2B-9692-173A72DAC8C3}.Release|x64.Build.0 = Release|x64
+		{95CF3931-CBD9-4A2B-9692-173A72DAC8C3}.Release|x86.ActiveCfg = Release|Win32
+		{95CF3931-CBD9-4A2B-9692-173A72DAC8C3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
