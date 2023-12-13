@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06.FunctionTemplates", "06.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07.ClassTemplates", "07.ClassTemplates\07.ClassTemplates.vcxproj", "{D301731C-27DC-4691-92CD-527F9B822E86}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08.AccessingTemplateSubtype.cpp", "08.AccessingTemplateSubtype.cpp\08.AccessingTemplateSubtype.cpp.vcxproj", "{E8B19BF5-54BF-4504-A28E-606C0F71697F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{D301731C-27DC-4691-92CD-527F9B822E86}.Release|x64.Build.0 = Release|x64
 		{D301731C-27DC-4691-92CD-527F9B822E86}.Release|x86.ActiveCfg = Release|Win32
 		{D301731C-27DC-4691-92CD-527F9B822E86}.Release|x86.Build.0 = Release|Win32
+		{E8B19BF5-54BF-4504-A28E-606C0F71697F}.Debug|x64.ActiveCfg = Debug|x64
+		{E8B19BF5-54BF-4504-A28E-606C0F71697F}.Debug|x64.Build.0 = Debug|x64
+		{E8B19BF5-54BF-4504-A28E-606C0F71697F}.Debug|x86.ActiveCfg = Debug|Win32
+		{E8B19BF5-54BF-4504-A28E-606C0F71697F}.Debug|x86.Build.0 = Debug|Win32
+		{E8B19BF5-54BF-4504-A28E-606C0F71697F}.Release|x64.ActiveCfg = Release|x64
+		{E8B19BF5-54BF-4504-A28E-606C0F71697F}.Release|x64.Build.0 = Release|x64
+		{E8B19BF5-54BF-4504-A28E-606C0F71697F}.Release|x86.ActiveCfg = Release|Win32
+		{E8B19BF5-54BF-4504-A28E-606C0F71697F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
