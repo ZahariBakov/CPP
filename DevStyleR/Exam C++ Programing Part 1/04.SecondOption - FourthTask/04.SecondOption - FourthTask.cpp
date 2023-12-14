@@ -35,7 +35,7 @@ int main() {
 
 	// обхождане на елементите на двумерния масив
 	for (int row = 0; row < n; ++row) {
-		for (int col = 0; col < m; ++col) {
+		for (int col = 1; col < m; col += 2) {
 
 			// проверка дали текущото число е по-голямо от 0. Не включвам 0.
 			if (matrix[row][col] > 0) {
