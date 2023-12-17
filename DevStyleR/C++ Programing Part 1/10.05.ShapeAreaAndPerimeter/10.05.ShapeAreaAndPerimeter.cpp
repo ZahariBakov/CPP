@@ -7,59 +7,55 @@ const double pi = M_PI;
 
 class Shape {
 public:
-    // Virtual member function to calculate the area
-    virtual double calculateArea() const = 0;
+    // Function
+    double calculateArea() {};
 
-    // Virtual member function to calculate the perimeter
-    virtual double calculatePerimeter() const = 0;
+    double calculatePerimeter() {};
 };
 
 class Circle : public Shape {
-private: double radius;
-
 public:
     // Constructor
     Circle(double rad) : radius(rad) {}
 
     // Functions
-    double calculateArea() const override {
+    double calculateArea() const {
         return pi * pow(radius, 2);
     }
 
-    double calculatePerimeter() const override {
+    double calculatePerimeter() const {
         return 2 * pi * radius;
     }
+
+private: 
+    double radius;
 };
 
 class Rectangle : public Shape {
-private: double length;
-       double width;
-
 public:
     // Constructor
-    Rectangle(double len, double wid) : length(len),
-        width(wid) {}
+    Rectangle(double len, double wid) 
+        : length(len), width(wid) {}
 
     // Functions
-    double calculateArea() const override {
+    double calculateArea() const {
         return length * width;
     }
 
-    double calculatePerimeter() const override {
+    double calculatePerimeter() const {
         return 2 * (length + width);
     }
+
+private: 
+    double length;
+    double width;
 };
 
 class Triangle : public Shape {
-private: double side1;
-       double side2;
-       double side3;
-
 public:
     // Constructor
-    Triangle(double s1, double s2, double s3) : side1(s1),
-        side2(s2),
-        side3(s3) {}
+    Triangle(double s1, double s2, double s3) 
+        : side1(s1),  side2(s2), side3(s3) {}
 
     // Functions
     double calculateArea() const {
@@ -70,6 +66,11 @@ public:
     double calculatePerimeter() const {
         return side1 + side2 + side3;
     }
+
+private:
+    double side1;
+    double side2;
+    double side3;
 };
 
 int main() {
