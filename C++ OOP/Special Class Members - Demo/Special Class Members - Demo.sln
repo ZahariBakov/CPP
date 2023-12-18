@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01.DefaultConstructor", "01
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02.CopyConstructorAndAssigment", "02.CopyConstructorAndAssigment\02.CopyConstructorAndAssigment.vcxproj", "{73EE64EF-8EED-41CC-9D15-CA2869CB0466}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03.Destructor", "03.Destructor\03.Destructor.vcxproj", "{519B5EDE-332B-4694-82FD-3F418C4B4527}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{73EE64EF-8EED-41CC-9D15-CA2869CB0466}.Release|x64.Build.0 = Release|x64
 		{73EE64EF-8EED-41CC-9D15-CA2869CB0466}.Release|x86.ActiveCfg = Release|Win32
 		{73EE64EF-8EED-41CC-9D15-CA2869CB0466}.Release|x86.Build.0 = Release|Win32
+		{519B5EDE-332B-4694-82FD-3F418C4B4527}.Debug|x64.ActiveCfg = Debug|x64
+		{519B5EDE-332B-4694-82FD-3F418C4B4527}.Debug|x64.Build.0 = Debug|x64
+		{519B5EDE-332B-4694-82FD-3F418C4B4527}.Debug|x86.ActiveCfg = Debug|Win32
+		{519B5EDE-332B-4694-82FD-3F418C4B4527}.Debug|x86.Build.0 = Debug|Win32
+		{519B5EDE-332B-4694-82FD-3F418C4B4527}.Release|x64.ActiveCfg = Release|x64
+		{519B5EDE-332B-4694-82FD-3F418C4B4527}.Release|x64.Build.0 = Release|x64
+		{519B5EDE-332B-4694-82FD-3F418C4B4527}.Release|x86.ActiveCfg = Release|Win32
+		{519B5EDE-332B-4694-82FD-3F418C4B4527}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
