@@ -24,6 +24,7 @@
     <ProjectGuid>{73ee64ef-8eed-41cc-9d15-ca2869cb0466}</ProjectGuid>
     <RootNamespace>My02CopyConstructorAndAssigment</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>02. CopyConstructorAndAssigment</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

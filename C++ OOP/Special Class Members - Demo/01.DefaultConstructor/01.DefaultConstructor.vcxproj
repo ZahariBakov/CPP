@@ -24,6 +24,7 @@
     <ProjectGuid>{8b1d7e9a-67ac-4250-ab04-3c4fd3e8edab}</ProjectGuid>
     <RootNamespace>My01DefaultConstructor</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>01. DefaultConstructor</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
