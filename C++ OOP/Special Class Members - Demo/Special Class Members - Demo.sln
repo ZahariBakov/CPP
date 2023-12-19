@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06. Move-Semantics", "06.Mo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07. std-move", "07. std-move\07. std-move.vcxproj", "{D71CDEC1-F5F9-48CC-AEF3-05F923791F2E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08. Using-Singletons", "08. Using-Singletons\08. Using-Singletons.vcxproj", "{FB1671A0-032C-4814-A806-CEFE3BE2C6CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -81,6 +83,14 @@ Global
 		{D71CDEC1-F5F9-48CC-AEF3-05F923791F2E}.Release|x64.Build.0 = Release|x64
 		{D71CDEC1-F5F9-48CC-AEF3-05F923791F2E}.Release|x86.ActiveCfg = Release|Win32
 		{D71CDEC1-F5F9-48CC-AEF3-05F923791F2E}.Release|x86.Build.0 = Release|Win32
+		{FB1671A0-032C-4814-A806-CEFE3BE2C6CC}.Debug|x64.ActiveCfg = Debug|x64
+		{FB1671A0-032C-4814-A806-CEFE3BE2C6CC}.Debug|x64.Build.0 = Debug|x64
+		{FB1671A0-032C-4814-A806-CEFE3BE2C6CC}.Debug|x86.ActiveCfg = Debug|Win32
+		{FB1671A0-032C-4814-A806-CEFE3BE2C6CC}.Debug|x86.Build.0 = Debug|Win32
+		{FB1671A0-032C-4814-A806-CEFE3BE2C6CC}.Release|x64.ActiveCfg = Release|x64
+		{FB1671A0-032C-4814-A806-CEFE3BE2C6CC}.Release|x64.Build.0 = Release|x64
+		{FB1671A0-032C-4814-A806-CEFE3BE2C6CC}.Release|x86.ActiveCfg = Release|Win32
+		{FB1671A0-032C-4814-A806-CEFE3BE2C6CC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
