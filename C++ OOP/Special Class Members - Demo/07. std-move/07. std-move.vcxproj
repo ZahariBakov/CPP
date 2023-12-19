@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9dadd044-fc15-455d-b655-01ddc1fd00f0}</ProjectGuid>
-    <RootNamespace>My06MoveSemantics</RootNamespace>
+    <ProjectGuid>{d71cdec1-f5f9-48cc-aef3-05f923791f2e}</ProjectGuid>
+    <RootNamespace>My07stdmove</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>06. Move-Semantics</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="06.Move-Semantics.cpp" />
+    <ClCompile Include="07. std-move.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
