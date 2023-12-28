@@ -3,6 +3,8 @@
 #include <vector>
 #include <algorithm>
 
+// https://www.codingame.com/ide/puzzle/power-of-thor-episode-1
+
 int main() {
     int light_x; // the X position of the light of power
     int light_y; // the Y position of the light of power
