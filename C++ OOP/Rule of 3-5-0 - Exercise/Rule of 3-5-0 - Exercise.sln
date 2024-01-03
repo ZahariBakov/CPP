@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03. Make Company", "03. Mak
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04. ParseUniqueCompanies", "04. ParseUniqueCompanies\04. ParseUniqueCompanies.vcxproj", "{6695020F-DC0C-4830-B45C-579C3C1248BB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05. RegisterOfThree", "05. RegisterOfThree\05. RegisterOfThree.vcxproj", "{D4B41527-1B6E-400A-A540-C7A46867F8EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{6695020F-DC0C-4830-B45C-579C3C1248BB}.Release|x64.Build.0 = Release|x64
 		{6695020F-DC0C-4830-B45C-579C3C1248BB}.Release|x86.ActiveCfg = Release|Win32
 		{6695020F-DC0C-4830-B45C-579C3C1248BB}.Release|x86.Build.0 = Release|Win32
+		{D4B41527-1B6E-400A-A540-C7A46867F8EF}.Debug|x64.ActiveCfg = Debug|x64
+		{D4B41527-1B6E-400A-A540-C7A46867F8EF}.Debug|x64.Build.0 = Debug|x64
+		{D4B41527-1B6E-400A-A540-C7A46867F8EF}.Debug|x86.ActiveCfg = Debug|Win32
+		{D4B41527-1B6E-400A-A540-C7A46867F8EF}.Debug|x86.Build.0 = Debug|Win32
+		{D4B41527-1B6E-400A-A540-C7A46867F8EF}.Release|x64.ActiveCfg = Release|x64
+		{D4B41527-1B6E-400A-A540-C7A46867F8EF}.Release|x64.Build.0 = Release|x64
+		{D4B41527-1B6E-400A-A540-C7A46867F8EF}.Release|x86.ActiveCfg = Release|Win32
+		{D4B41527-1B6E-400A-A540-C7A46867F8EF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
