@@ -17,10 +17,8 @@ public:
 
 	~Register();
 
-	Register& operator=(Register& other);
+	Register& operator=(const Register& other);
 	Register(const Register& other);
-
-	friend void swap(Register& left, Register& right);
 };
 
 #endif // !REGISTER_H
