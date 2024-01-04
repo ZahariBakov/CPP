@@ -3,7 +3,6 @@
 double readNumber() {
     double number;
 
-    std::cout << "Enter number: ";
     std::cin >> number;
 
     return number;
@@ -31,6 +30,7 @@ void printSolution(double num, double a, double b, double c) {
 
 int main() {
     double a, b, c;
+    std::cout << "Enter a three numbers: ";
     a = readNumber();
     b = readNumber();
     c = readNumber();
