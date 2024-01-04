@@ -71,6 +71,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12. TwelfthLecture", "12. T
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12.01. StringManipulation", "12.01. StringManipulation\12.01. StringManipulation.vcxproj", "{34B0003B-B265-49D4-9C61-4F2F31EC37FF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11.01. MaxOfThree", "11.01. MaxOfThree\11.01. MaxOfThree.vcxproj", "{3E075AB1-3A47-47D3-BF9A-1AA0D21A7551}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -351,6 +353,14 @@ Global
 		{34B0003B-B265-49D4-9C61-4F2F31EC37FF}.Release|x64.Build.0 = Release|x64
 		{34B0003B-B265-49D4-9C61-4F2F31EC37FF}.Release|x86.ActiveCfg = Release|Win32
 		{34B0003B-B265-49D4-9C61-4F2F31EC37FF}.Release|x86.Build.0 = Release|Win32
+		{3E075AB1-3A47-47D3-BF9A-1AA0D21A7551}.Debug|x64.ActiveCfg = Debug|x64
+		{3E075AB1-3A47-47D3-BF9A-1AA0D21A7551}.Debug|x64.Build.0 = Debug|x64
+		{3E075AB1-3A47-47D3-BF9A-1AA0D21A7551}.Debug|x86.ActiveCfg = Debug|Win32
+		{3E075AB1-3A47-47D3-BF9A-1AA0D21A7551}.Debug|x86.Build.0 = Debug|Win32
+		{3E075AB1-3A47-47D3-BF9A-1AA0D21A7551}.Release|x64.ActiveCfg = Release|x64
+		{3E075AB1-3A47-47D3-BF9A-1AA0D21A7551}.Release|x64.Build.0 = Release|x64
+		{3E075AB1-3A47-47D3-BF9A-1AA0D21A7551}.Release|x86.ActiveCfg = Release|Win32
+		{3E075AB1-3A47-47D3-BF9A-1AA0D21A7551}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
