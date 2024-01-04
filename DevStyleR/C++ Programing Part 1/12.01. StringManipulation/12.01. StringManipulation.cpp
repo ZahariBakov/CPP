@@ -29,7 +29,8 @@ void printNumbersOfVowels(std::string result) {
     int len = result.length();
 
     for (int i = 0; i < len; ++i) {
-        if (result[i] == 'a' || result[i] == 'e' || result[i] == 'o' || result[i] == 'i' || result[i] == 'u') {
+        if (result[i] == 'a' || result[i] == 'e' || result[i] == 'o' || result[i] == 'i' || result[i] == 'u' 
+            || result[i] == 'A' || result[i] == 'E' || result[i] == 'O' || result[i] == 'I' || result[i] == 'U') {
             vowels++;
         }
     }
