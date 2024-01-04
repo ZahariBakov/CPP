@@ -41,21 +41,8 @@ Register::~Register() {
 	}
 }
 
-Register& Register::operator=(const Register& other) {
-	if (this != &other) {
-		Company* companies = new Company[other.numAdded];
-
-		std::copy(other.companiesArray, other.companiesArray + other.numAdded, companies);
-
-		numAdded = other.numAdded;
-
-		if (companiesArray) {
-			delete[] companiesArray;
-		}
-
-		companiesArray = companies;
-		companies = nullptr;
-	}
+Register& Register::operator=(Register& other) {
+	swap(*this, other);
 
 	return *this;
 }
@@ -63,4 +50,9 @@ Register& Register::operator=(const Register& other) {
 Register::Register(const Register& other)
 	: numAdded(other.numAdded), companiesArray(new Company[numAdded]) {
 	std::copy(other.companiesArray, other.companiesArray + other.numAdded, companiesArray);
+}
+
+void swap(Register& left, Register& right) {
+	std::swap(left.numAdded, right.numAdded);
+	std::swap(left.companiesArray, right.companiesArray);
 }
