@@ -4,39 +4,60 @@
 #include "Book.h"
 #include "BookService.h"
 
-int main() {
+std::vector<Book> EnterBooks() {
     std::vector<Book> books;
-    double mostExpensiveBook = 0.00;
-    double mostCheapestBook = 1500.00;
-    int indexExpensive = 0;
-    int indexCheapest = 0;
+    int booksCount = 0;
+
+    std::cout << "How many books do you want to enter? \n";
+    std::cin >> booksCount;
 
     BookService bs;
 
-    for (int i = 0; i < 4; ++i) {
+    for (int i = 0; i < booksCount; ++i) {
         Book myBook = bs.inputData();
         books.push_back(myBook);
     }
 
-    for (int j = 0; j < books.size(); ++j) {
-        if (books.at(j).getPrice() > mostExpensiveBook) {
-            mostExpensiveBook = books.at(j).getPrice();
-            indexExpensive = j;
-        }
+    return books;
+}
 
-        if (books.at(j).getPrice() < mostCheapestBook) {
-            mostCheapestBook = books.at(j).getPrice();
-            indexCheapest = j;
+void theCheapestBook(std::vector<Book>& books) {
+    double mostCheapestBook = books.at(0).getPrice();
+    int idx = 0;
+
+    for (int i = 1; i < books.size(); ++i) {
+        if (books.at(i).getPrice() < mostCheapestBook) {
+            mostCheapestBook = books.at(i).getPrice();
+            idx = i;
+        }
+    }
+
+    std::cout << "Most cheapest book is: ";
+    books[idx].displayMessage();
+    std::cout << std::endl;
+}
+
+void theMostExpensiveBook(std::vector<Book>& books) {
+    double mostExpensiveBook = books[0].getPrice();
+    int idx = 0;
+
+    for (int j = 0; j < books.size(); ++j) {
+        if (books[0].getPrice() > mostExpensiveBook) {
+            mostExpensiveBook = books[0].getPrice();
+            idx = j;
         }
     }
 
     std::cout << "Most expensive book is: ";
-    books.at(indexExpensive).displayMessage();
+    books.at(idx).displayMessage();
     std::cout << "\n";
+}
 
-    std::cout << "Most cheapest book is: ";
-    books[indexCheapest].displayMessage();
-    std::cout << std::endl;
+int main() {
+    std::vector<Book> books = EnterBooks();
+
+    theCheapestBook(books);
+    theMostExpensiveBook(books);
 
     return 0;
 }
