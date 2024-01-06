@@ -50,7 +50,7 @@ void theMostExpensiveBook(std::vector<Book>& books) {
 
     std::cout << "Most expensive book is: ";
     books.at(idx).displayMessage();
-    std::cout << "\n";
+    std::cout << std::endl;
 }
 
 int main() {

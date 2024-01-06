@@ -44,6 +44,18 @@ double Book::getPrice() {
 	return this->price;
 }
 
+std::string Book::getAuthor() {
+	return this->author;
+}
+
+std::string Book::getBookName() {
+	return this->bookName;
+}
+
+int Book::getYear() {
+	return this->yearOfIssue;
+}
+
 void Book::displayMessage() {
 	std::cout << "Author: " << this->author
 		<< ", Book Name: " << this->bookName

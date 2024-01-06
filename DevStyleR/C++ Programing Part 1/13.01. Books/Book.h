@@ -14,6 +14,9 @@ public:
 	void setPrice(double);
 
 	double getPrice();
+	std::string getAuthor();
+	std::string getBookName();
+	int getYear();
 
 	void inputData();
 	void displayMessage();
