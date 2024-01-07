@@ -67,11 +67,26 @@ void theMostExpensiveBook(std::vector<Book>& books) {
     library(books);
 }
 
+void searchBook(std::vector<Book>& books) {
+    std::string search;
+
+    std::cout << "Enter the author or book you are looking for. \n";
+    std::getline(std::cin >> std::ws, search);
+
+    for (size_t i = 0; i < books.size(); ++i) {
+        if (search == books.at(i).getAuthor() || search == books[i].getTitle()) {
+            books[i].displayMessage();
+        }
+    }
+}
+
 int main() {
     auto books = EnterBooks();
 
     theCheapestBook(books);
     theMostExpensiveBook(books);
+
+    searchBook(books);
 
     return 0;
 }
