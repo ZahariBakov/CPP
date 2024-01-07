@@ -2,15 +2,15 @@
 
 Book BookService::inputData() {
 	std::string author;
-	std::string bookName;
+	std::string title;
 	int yearOfIssue;
 	double price;
 
 	std::cout << "Enter Author: " << " ";
 	std::getline(std::cin, author);
 
-	std::cout << "Enter Book name: " << " ";
-	std::getline(std::cin, bookName);
+	std::cout << "Enter Book title: " << " ";
+	std::getline(std::cin, title);
 
 	std::cout << "Enter Year of issue: " << " ";
 	std::cin >> yearOfIssue;
@@ -20,7 +20,7 @@ Book BookService::inputData() {
 
 	std::cout << std::endl;
 
-	Book myBook(author, bookName, yearOfIssue, price);
+	Book myBook(author, title, yearOfIssue, price);
 
 	return myBook;
 }

@@ -9,13 +9,13 @@ public:
 	Book(std::string, std::string, int, double);
 
 	void setAuthor(std::string);
-	void setBookName(std::string);
+	void setTitle(std::string);
 	void setYearOfIssue(int);
 	void setPrice(double);
 
 	double getPrice();
 	std::string getAuthor();
-	std::string getBookName();
+	std::string getTitle();
 	int getYear();
 
 	void inputData();
@@ -23,7 +23,7 @@ public:
 
 private:
 	std::string author;
-	std::string bookName;
+	std::string title;
 	int yearOfIssue;
 	double price;
 };

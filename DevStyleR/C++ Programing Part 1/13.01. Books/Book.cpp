@@ -1,8 +1,8 @@
 #include "Book.h"
 
-Book::Book(std::string author, std::string bookName, int yearOfIssue, double price) {
+Book::Book(std::string author, std::string title, int yearOfIssue, double price) {
 	setAuthor(author);
-	setBookName(bookName);
+	setTitle(title);
 	setYearOfIssue(yearOfIssue);
 	setPrice(price);
 }
@@ -11,8 +11,8 @@ void Book::setAuthor(std::string author) {
 	this->author = author;
 }
 
-void Book::setBookName(std::string bookName) {
-	this->bookName = bookName;
+void Book::setTitle(std::string title) {
+	this->title = title;
 }
 
 void Book::setYearOfIssue(int yearOfIssue) {
@@ -48,8 +48,8 @@ std::string Book::getAuthor() {
 	return this->author;
 }
 
-std::string Book::getBookName() {
-	return this->bookName;
+std::string Book::getTitle() {
+	return this->title;
 }
 
 int Book::getYear() {
@@ -58,7 +58,7 @@ int Book::getYear() {
 
 void Book::displayMessage() {
 	std::cout << "Author: " << this->author
-		<< ", Book Name: " << this->bookName
+		<< ", Book Title: " << this->title
 		<< ", Year of issue: " << this->yearOfIssue
 		<< ", price: " << this->price
 		<< std::endl;

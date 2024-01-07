@@ -54,7 +54,7 @@ void theMostExpensiveBook(std::vector<Book>& books) {
 }
 
 int main() {
-    std::vector<Book> books = EnterBooks();
+    auto books = EnterBooks();
 
     theCheapestBook(books);
     theMostExpensiveBook(books);
