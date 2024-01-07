@@ -3,7 +3,7 @@
 Book::Book(std::string author, std::string title, int yearOfIssue, double price) {
 	setAuthor(author);
 	setTitle(title);
-	setYearOfIssue(yearOfIssue);
+	setYear(yearOfIssue);
 	setPrice(price);
 }
 
@@ -15,7 +15,7 @@ void Book::setTitle(std::string title) {
 	this->title = title;
 }
 
-void Book::setYearOfIssue(int yearOfIssue) {
+void Book::setYear(int yearOfIssue) {
 	if (yearOfIssue > 1880 && yearOfIssue < 2024) {
 		this->yearOfIssue = yearOfIssue;
 	}
@@ -40,10 +40,6 @@ void Book::setPrice(double price) {
 	}
 }
 
-double Book::getPrice() {
-	return this->price;
-}
-
 std::string Book::getAuthor() {
 	return this->author;
 }
@@ -56,10 +52,14 @@ int Book::getYear() {
 	return this->yearOfIssue;
 }
 
+double Book::getPrice() {
+	return this->price;
+}
+
 void Book::displayMessage() {
-	std::cout << "Author: " << this->author
-		<< ", Book Title: " << this->title
-		<< ", Year of issue: " << this->yearOfIssue
-		<< ", price: " << this->price
+	std::cout << "Author: " << getAuthor()
+		<< ", Book Title: " << getTitle()
+		<< ", Year of issue: " << getYear()
+		<< ", price: " << getPrice()
 		<< std::endl;
 }

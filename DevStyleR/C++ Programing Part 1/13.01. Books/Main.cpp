@@ -23,9 +23,9 @@ std::vector<Book> EnterBooks() {
 
 void theCheapestBook(std::vector<Book>& books) {
     double mostCheapestBook = books.at(0).getPrice();
-    int idx = 0;
+    size_t idx = 0;
 
-    for (int i = 1; i < books.size(); ++i) {
+    for (size_t i = 1; i < books.size(); ++i) {
         if (books.at(i).getPrice() < mostCheapestBook) {
             mostCheapestBook = books.at(i).getPrice();
             idx = i;
@@ -37,13 +37,25 @@ void theCheapestBook(std::vector<Book>& books) {
     std::cout << std::endl;
 }
 
+void library(std::vector<Book>& books) {
+    size_t booksSize = books.size();
+
+    std::cout << "All books" << std::endl;
+
+    for (size_t i = 0; i < booksSize; ++i) {
+        books[i].displayMessage();
+    }
+    std::cout << std::endl;
+
+}
+
 void theMostExpensiveBook(std::vector<Book>& books) {
     double mostExpensiveBook = books[0].getPrice();
-    int idx = 0;
+    size_t idx = 0;
 
-    for (int j = 0; j < books.size(); ++j) {
-        if (books[0].getPrice() > mostExpensiveBook) {
-            mostExpensiveBook = books[0].getPrice();
+    for (size_t j = 1; j < books.size(); ++j) {
+        if (books[j].getPrice() > mostExpensiveBook) {
+            mostExpensiveBook = books[j].getPrice();
             idx = j;
         }
     }
@@ -51,6 +63,8 @@ void theMostExpensiveBook(std::vector<Book>& books) {
     std::cout << "Most expensive book is: ";
     books.at(idx).displayMessage();
     std::cout << std::endl;
+
+    library(books);
 }
 
 int main() {

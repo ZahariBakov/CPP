@@ -10,15 +10,14 @@ public:
 
 	void setAuthor(std::string);
 	void setTitle(std::string);
-	void setYearOfIssue(int);
+	void setYear(int);
 	void setPrice(double);
-
-	double getPrice();
+	
 	std::string getAuthor();
 	std::string getTitle();
 	int getYear();
+	double getPrice();
 
-	void inputData();
 	void displayMessage();
 
 private:
