@@ -7,10 +7,10 @@ Book BookService::inputData() {
 	double price;
 
 	std::cout << "Enter Author: " << " ";
-	std::cin >> author;
+	std::getline(std::cin, author);
 
 	std::cout << "Enter Book name: " << " ";
-	std::cin >> bookName;
+	std::getline(std::cin, bookName);
 
 	std::cout << "Enter Year of issue: " << " ";
 	std::cin >> yearOfIssue;
