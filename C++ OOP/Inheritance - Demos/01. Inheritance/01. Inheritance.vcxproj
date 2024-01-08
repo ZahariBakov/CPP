@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4a7c329e-133a-49b8-bff2-6f2f8df246ba}</ProjectGuid>
-    <RootNamespace>My02ProtectedMembers</RootNamespace>
+    <ProjectGuid>{d25f3bc4-69ae-458b-a7db-8e90c42878ca}</ProjectGuid>
+    <RootNamespace>My01Inheritance</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="02. ProtectedMembers.cpp" />
+    <ClCompile Include="01. Inheritance.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -3,7 +3,7 @@
 #include <sstream>
 
 class Vehicle {
-protected:
+public:
     double speed;
 };
 
@@ -43,9 +43,6 @@ public:
 int main() {
     Car car(90, false);
     Airplane airplane(700, 1000, 90);
-
-    // compilation error - speed is protected, can't be accessed from outside
-    //std::cout << car.speed << std::endl;
 
     std::cout << car.toString() << std::endl;
     std::cout << airplane.toString() << std::endl;

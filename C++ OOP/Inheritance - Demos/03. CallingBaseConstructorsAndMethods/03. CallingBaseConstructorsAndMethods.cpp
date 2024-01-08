@@ -3,21 +3,28 @@
 #include <sstream>
 
 class Vehicle {
-public:
+protected:
     double speed;
+
+    Vehicle(double speed) : speed(speed) {}
+
+    std::string toString() const {
+        std::ostringstream stream;
+        stream << "speed: " << this->speed;
+
+        return stream.str();
+    }
 };
 
 class Car : public Vehicle {
     bool parkingBrakeOn;
 
 public:
-    Car(double speed, bool parkingBrakeOn) : parkingBrakeOn(parkingBrakeOn) {
-        this->speed = speed;
-    }
+    Car(double speed, bool parkingBrakeOn) : Vehicle(speed), parkingBrakeOn(parkingBrakeOn) {}
 
     std::string toString() const {
         std::ostringstream stream;
-        stream << "speed: " << this->speed << " parking brake: " << (this->parkingBrakeOn ? "yes" : "no");
+        stream << Vehicle::toString() << " parking brake: " << (this->parkingBrakeOn ? "yes" : "no");
 
         return stream.str();
     }
@@ -28,13 +35,11 @@ class Airplane : public Vehicle {
     double heading;
 
 public:
-    Airplane(double speed, double altitude, double heading) : altitude(altitude), heading(heading) {
-        this->speed = speed;
-    }
+    Airplane(double speed, double altitude, double heading) : Vehicle(speed), altitude(altitude), heading(heading) {}
 
     std::string toString() const {
         std::ostringstream stream;
-        stream << "speed: " << this->speed << " altitude: " << this->altitude << " heading: " << this->heading;
+        stream << Vehicle::toString() << " altitude: " << this->altitude << " heading: " << this->heading;
 
         return stream.str();
     }

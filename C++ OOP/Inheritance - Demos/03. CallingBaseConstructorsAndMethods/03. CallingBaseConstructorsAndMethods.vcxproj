@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c062f0ad-9012-454c-b723-fdbd731fe039}</ProjectGuid>
+    <ProjectGuid>{ca3e159c-108d-41cc-a74b-cf86f9a66c56}</ProjectGuid>
     <RootNamespace>My03CallingBaseConstructorsAndMethods</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
