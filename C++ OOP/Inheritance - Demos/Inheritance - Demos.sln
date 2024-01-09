@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04. ObjectSlicing", "04. Ob
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05. PitfallSlicingOutAHiddenField", "05. PitfallSlicingOutAHiddenField\05. PitfallSlicingOutAHiddenField.vcxproj", "{54311A4A-36AD-401E-8CF2-C55A2467261C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06. BasePointerToDerived", "06. BasePointerToDerived\06. BasePointerToDerived.vcxproj", "{ABF18B25-DF5B-4BA9-A518-F37BE7C845B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{54311A4A-36AD-401E-8CF2-C55A2467261C}.Release|x64.Build.0 = Release|x64
 		{54311A4A-36AD-401E-8CF2-C55A2467261C}.Release|x86.ActiveCfg = Release|Win32
 		{54311A4A-36AD-401E-8CF2-C55A2467261C}.Release|x86.Build.0 = Release|Win32
+		{ABF18B25-DF5B-4BA9-A518-F37BE7C845B0}.Debug|x64.ActiveCfg = Debug|x64
+		{ABF18B25-DF5B-4BA9-A518-F37BE7C845B0}.Debug|x64.Build.0 = Debug|x64
+		{ABF18B25-DF5B-4BA9-A518-F37BE7C845B0}.Debug|x86.ActiveCfg = Debug|Win32
+		{ABF18B25-DF5B-4BA9-A518-F37BE7C845B0}.Debug|x86.Build.0 = Debug|Win32
+		{ABF18B25-DF5B-4BA9-A518-F37BE7C845B0}.Release|x64.ActiveCfg = Release|x64
+		{ABF18B25-DF5B-4BA9-A518-F37BE7C845B0}.Release|x64.Build.0 = Release|x64
+		{ABF18B25-DF5B-4BA9-A518-F37BE7C845B0}.Release|x86.ActiveCfg = Release|Win32
+		{ABF18B25-DF5B-4BA9-A518-F37BE7C845B0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
