@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02. ProtectedMembers", "02.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03. CallingBaseConstructorsAndMethods", "03. CallingBaseConstructorsAndMethods\03. CallingBaseConstructorsAndMethods.vcxproj", "{CA3E159C-108D-41CC-A74B-CF86F9A66C56}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04. ObjectSlicing", "04. ObjectSlicing\04. ObjectSlicing.vcxproj", "{577F5F04-237F-46FC-BB29-4A5EC624492E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{CA3E159C-108D-41CC-A74B-CF86F9A66C56}.Release|x64.Build.0 = Release|x64
 		{CA3E159C-108D-41CC-A74B-CF86F9A66C56}.Release|x86.ActiveCfg = Release|Win32
 		{CA3E159C-108D-41CC-A74B-CF86F9A66C56}.Release|x86.Build.0 = Release|Win32
+		{577F5F04-237F-46FC-BB29-4A5EC624492E}.Debug|x64.ActiveCfg = Debug|x64
+		{577F5F04-237F-46FC-BB29-4A5EC624492E}.Debug|x64.Build.0 = Debug|x64
+		{577F5F04-237F-46FC-BB29-4A5EC624492E}.Debug|x86.ActiveCfg = Debug|Win32
+		{577F5F04-237F-46FC-BB29-4A5EC624492E}.Debug|x86.Build.0 = Debug|Win32
+		{577F5F04-237F-46FC-BB29-4A5EC624492E}.Release|x64.ActiveCfg = Release|x64
+		{577F5F04-237F-46FC-BB29-4A5EC624492E}.Release|x64.Build.0 = Release|x64
+		{577F5F04-237F-46FC-BB29-4A5EC624492E}.Release|x86.ActiveCfg = Release|Win32
+		{577F5F04-237F-46FC-BB29-4A5EC624492E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
