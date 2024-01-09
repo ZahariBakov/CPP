@@ -1,18 +1,26 @@
 #include "Student.h"
 
-Student::Student(std::string name, int id) {
+Student::Student(std::string name, int classNumber) {
 	setName(name);
-	setId(id);
+	setClassNumber(classNumber);
 }
 
 void Student::setName(std::string name) {
 	this->name = name;
 }
 
-void Student::setId(int id) {
-	this->id = id;
+void Student::setClassNumber(int classNumber) {
+	this->classNumber = classNumber;
+}
+
+std::string Student::getName() {
+	return this->name;
+}
+
+int Student::getClassNumber() {
+	return this->classNumber;
 }
 
 void Student::printStudentInfo() {
-	std::cout << "Student name " << this->name << " and id " << this->id << std::endl;
+	std::cout << "Student name " << this->name << " and class number " << this->classNumber << std::endl;
 }

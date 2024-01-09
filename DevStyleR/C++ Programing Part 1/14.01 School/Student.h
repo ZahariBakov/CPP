@@ -8,14 +8,14 @@ public:
 	Student(std::string, int);
 
 	void setName(std::string);
-	void setId(int);
+	void setClassNumber(int);
 
 	std::string getName();
-	int getId();
+	int getClassNumber();
 
 	void printStudentInfo();
 
 private:
 	std::string name;
-	int id;
+	int classNumber;
 };

@@ -4,11 +4,16 @@
 
 class Teacher {
 public:
-	Teacher(std::string, std::string, Discipline&);
-	void printTeacherInfo();
+	Teacher(std::string&, std::string, std::vector<Discipline>&);
+
+	std::string getName();
+	std::string getTitle();
+	std::vector<Discipline> getDisciplines();
+
+	//void printTeacherInfo();
 
 private:
 	std::string name;
 	std::string title;
-	Discipline discipline;
+	std::vector<Discipline> disciplines;
 };
