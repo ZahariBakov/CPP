@@ -5,7 +5,7 @@
 
 class Student {
 public:
-	Student(std::string, int);
+	Student(const std::string&, int);
 
 	void setName(std::string);
 	void setClassNumber(int);

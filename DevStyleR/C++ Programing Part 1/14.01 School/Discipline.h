@@ -6,7 +6,7 @@
 
 class Discipline {
 public:
-	Discipline(std::string, int, int);
+	Discipline(const std::string&, int, int);
 
 	void setName(std::string);
 	void setLecturesNumber(int);

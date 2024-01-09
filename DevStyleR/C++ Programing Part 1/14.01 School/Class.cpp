@@ -1,6 +1,6 @@
 #include "Class.h"
 
-Class::Class (std::string& id, std::vector<Teacher>& t, std::vector<Student>& s)
+Class::Class (const std::string& id, const std::vector<Teacher>& t, const std::vector<Student>& s)
 	: identifier(id), teachers(t), students(s) {}
 
 std::string Class::getIdentifier() { 

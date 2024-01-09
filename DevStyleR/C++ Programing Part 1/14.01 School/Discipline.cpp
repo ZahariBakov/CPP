@@ -1,10 +1,6 @@
 #include "Discipline.h"
 
-Discipline::Discipline(std::string name, int lectures, int exercises) {
-	setName(name);
-	setLecturesNumber(lectures);
-	setExercisesNumber(exercises);
-}
+Discipline::Discipline(const std::string& n, int lectures, int exercises) : name(n), lectureCount(lectures), exerciseCount(exercises) {}
 
 std::string Discipline::getName() {
 	return this->name;

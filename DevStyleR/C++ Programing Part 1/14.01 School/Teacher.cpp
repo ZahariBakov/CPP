@@ -1,6 +1,6 @@
 #include "Teacher.h"
 
-Teacher::Teacher(std::string &name, std::string title, std::vector<Discipline> &disciple)
+Teacher::Teacher(const std::string &name, const std::string &title, const std::vector<Discipline> &disciple)
 	: name(name), title(title), disciplines(disciple) {}
 
 std::string Teacher::getName() { 
@@ -14,10 +14,3 @@ std::string Teacher::getTitle() {
 std::vector<Discipline> Teacher::getDisciplines() {
 	return this->disciplines;
 }
-
-
-//void Teacher::printTeacherInfo() {
-//	std::cout << "Teacher name " << this->name << " title " << this->title << " and discipline ";
-//	this->disciplines.printDisciplineIfno();
-//	std::cout << std::endl;
-//}

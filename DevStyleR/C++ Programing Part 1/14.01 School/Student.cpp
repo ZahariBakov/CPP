@@ -1,9 +1,6 @@
 #include "Student.h"
 
-Student::Student(std::string name, int classNumber) {
-	setName(name);
-	setClassNumber(classNumber);
-}
+Student::Student(const std::string &n, int number) : name(n), classNumber(number) {}
 
 void Student::setName(std::string name) {
 	this->name = name;

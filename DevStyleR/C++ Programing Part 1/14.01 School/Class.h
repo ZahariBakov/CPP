@@ -5,7 +5,7 @@
 
 class Class {
 public:
-	Class(std::string&, std::vector<Teacher>&, std::vector<Student>&);
+	Class(const std::string&, const std::vector<Teacher>&, const std::vector<Student>&);
 
 	std::string getIdentifier();
 	std::vector<Teacher> getTeachers();
