@@ -44,3 +44,14 @@ int main() {
 
     return 0;
 }
+
+// Test input 1:
+//2
+//buy Acer 1200.14 15.6
+//remove 0
+
+// Test input 2:
+//3
+//buy Acer 1200.14 15.6
+//buy Toshiba 902.87 17.2
+//remove 1
