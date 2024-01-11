@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "E1. HardwareStore", "E1. Ha
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07. CompositionBadSignaling", "07. CompositionBadSignaling\07. CompositionBadSignaling.vcxproj", "{9B40A2F5-F8BA-42D7-A9CE-7515BEF0E37B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08. CompositionGoodSignaling", "08. CompositionGoodSignaling\08. CompositionGoodSignaling.vcxproj", "{AFFC5A20-F6B7-4108-9179-0F4C4CD6CE36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{9B40A2F5-F8BA-42D7-A9CE-7515BEF0E37B}.Release|x64.Build.0 = Release|x64
 		{9B40A2F5-F8BA-42D7-A9CE-7515BEF0E37B}.Release|x86.ActiveCfg = Release|Win32
 		{9B40A2F5-F8BA-42D7-A9CE-7515BEF0E37B}.Release|x86.Build.0 = Release|Win32
+		{AFFC5A20-F6B7-4108-9179-0F4C4CD6CE36}.Debug|x64.ActiveCfg = Debug|x64
+		{AFFC5A20-F6B7-4108-9179-0F4C4CD6CE36}.Debug|x64.Build.0 = Debug|x64
+		{AFFC5A20-F6B7-4108-9179-0F4C4CD6CE36}.Debug|x86.ActiveCfg = Debug|Win32
+		{AFFC5A20-F6B7-4108-9179-0F4C4CD6CE36}.Debug|x86.Build.0 = Debug|Win32
+		{AFFC5A20-F6B7-4108-9179-0F4C4CD6CE36}.Release|x64.ActiveCfg = Release|x64
+		{AFFC5A20-F6B7-4108-9179-0F4C4CD6CE36}.Release|x64.Build.0 = Release|x64
+		{AFFC5A20-F6B7-4108-9179-0F4C4CD6CE36}.Release|x86.ActiveCfg = Release|Win32
+		{AFFC5A20-F6B7-4108-9179-0F4C4CD6CE36}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
