@@ -29,7 +29,7 @@ void Hall::print() {
 	std::cout << "Hall is: " << this->name << " with " << this->seats
 		<< "seats" << std::endl;
 
-	for (int i = 0; i < this->screeningList.size(); ++i) {
+	for (size_t i = 0; i < this->screeningList.size(); ++i) {
 		this->screeningList.at(i).print();
 	}
 

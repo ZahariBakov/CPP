@@ -2,6 +2,7 @@
 
 #include "Screening.h"
 #include "Hall.h"
+#include "Cinema.h"
 
 int main() {
     Screening sc1("Star Wars", 100);
@@ -32,6 +33,62 @@ int main() {
     Screening sc5("Nemo 2", 55);
     h3.addScreening(sc5);
     h3.print();
+
+    std::vector<Hall> halls;
+    halls.push_back(h1);
+    halls.push_back(h2);
+
+    Cinema cinema("Arena", "Sofia", halls);
+    cinema.print();
+
+    cinema.addHall(h3);
+    cinema.print();
+
+    halls.push_back(h3);
+
+    std::string movieName;
+    std::getline(std::cin, movieName);
+
+    for (int i = 0; i < halls.size(); ++i) {
+        Hall currHall = halls[i]; 
+        std::vector<Screening> currScreenList = currHall.getScreeningList();
+
+        for (int idx = 0; idx < currScreenList.size(); ++idx) {
+            Screening scrObj = currScreenList[idx];
+            std::string currMovieName = scrObj.getMovieName();
+
+            if (movieName == currMovieName) {
+                std::cout << "We found projection " << scrObj.getMovieName() << std::endl;
+                scrObj.print();
+                currHall.print();
+            }
+        }
+    }
+
+    //for (int i = 0; i < halls.size(); i++) { // is for halls
+    //    //        Hall h = halls.at(i); // current hall
+    //    //        vector<Screening> scr = halls.at(i).getScreeningList();  // projection in the current hall
+    //    for (int j = 0; j < halls.at(i).getScreeningList().size(); j++) {  // is for screening vector
+    //        //            Screening scrObj = halls.at(i).getScreeningList().at(j); // current projection
+    //        //            string currentMovieName = halls.at(i).getScreeningList().at(j).getMovieName();  // movie name from screening object
+
+    //        if (movieName == halls.at(i).getScreeningList().at(j).getMovieName()) {
+    //            cout << " We found projection " << halls.at(i).getScreeningList().at(j).getMovieName() << endl;
+    //            halls.at(i).getScreeningList().at(j).print();
+    //            halls.at(i).print();
+    //        }
+    //    }
+    //}
+
+    /*for (int i = 0; i < halls.size(); i++) {
+        for (int j = 0; j < halls.at(i).getScreeningList().size(); j++) {
+            if (movieName == halls.at(i).getScreeningList().at(j).getMovieName()) {
+                std::cout << " We found projection " << halls.at(i).getScreeningList().at(j).getMovieName() << std::endl;
+                halls.at(i).getScreeningList().at(j).print();
+                halls.at(i).print();
+            }
+        }
+    }*/
 
     return 0;
 }

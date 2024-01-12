@@ -18,27 +18,15 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Screening.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Hall.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Cinema.cpp">
+    <ClCompile Include="Dog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Screening.h">
+    <ClInclude Include="Animal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Hall.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="task.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Cinema.h">
+    <ClInclude Include="Dog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
