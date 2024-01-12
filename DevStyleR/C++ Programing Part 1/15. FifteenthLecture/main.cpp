@@ -47,20 +47,15 @@ int main() {
     halls.push_back(h3);
 
     std::string movieName;
+    std::cout << "Enter the name of the movie you are looking for." << std::endl;
     std::getline(std::cin, movieName);
 
     for (int i = 0; i < halls.size(); ++i) {
-        Hall currHall = halls[i]; 
-        std::vector<Screening> currScreenList = currHall.getScreeningList();
-
-        for (int idx = 0; idx < currScreenList.size(); ++idx) {
-            Screening scrObj = currScreenList[idx];
-            std::string currMovieName = scrObj.getMovieName();
-
-            if (movieName == currMovieName) {
-                std::cout << "We found projection " << scrObj.getMovieName() << std::endl;
-                scrObj.print();
-                currHall.print();
+        for (int j = 0; j < halls.at(i).getScreeningList().size(); ++j) {
+            if (movieName == halls.at(i).getScreeningList().at(j).getMovieName()) {
+                std::cout << " We found projection " << halls.at(i).getScreeningList().at(j).getMovieName() << std::endl;
+                halls.at(i).getScreeningList().at(j).print();
+                halls.at(i).print();
             }
         }
     }
