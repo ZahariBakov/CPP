@@ -4,7 +4,7 @@
 
 class Dog : public Animal {
 public:
-	Dog(string, string, int, string);
+	Dog(string, string, double, string);
 
 	void setBark(string);
 

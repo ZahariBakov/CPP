@@ -1,6 +1,6 @@
 #include "Dog.h"
 
-Dog::Dog(string kind, string name, int year, string bark) : Animal(kind, name, year) {
+Dog::Dog(string breed, string name, double age, string bark) : Animal(breed, name, age) {
 	setBark(bark);
 }
 
@@ -15,5 +15,5 @@ string Dog::getBark() {
 void Dog::print() {
 	Animal::print();
 
-	cout << this->bark;
+	cout << this->bark << endl;
 }

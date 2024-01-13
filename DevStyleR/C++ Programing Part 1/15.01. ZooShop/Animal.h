@@ -7,21 +7,21 @@ using namespace std;
 
 class Animal {
 public:
-	Animal(string, string, int);
+	Animal(string, string, double);
 
 	void setName(string);
-	void setKind(string);
-	void setYear(int);
+	void setBreed(string);
+	void setAge(double);
 
 	string getName();
-	string getKind();
-	int	   getYear();
+	string getBreed();
+	double getAge();
 
 	void print();
 
 private:
-	string kind;
+	string breed;
 	string name;
-	int year;
+	double age;
 };
 
