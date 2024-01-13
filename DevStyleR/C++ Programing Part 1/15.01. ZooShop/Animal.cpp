@@ -55,5 +55,5 @@ double Animal::getAge() {
 
 // functions
 void Animal::print() {
-	cout << "Breed: " << getBreed() << ", Name: " << getName() << ", Age: " << getAge() << endl;
+	cout << "Breed: " << getBreed() << ", Name: " << getName() << ", Age: " << getAge() << " ";
 }
