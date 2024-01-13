@@ -15,5 +15,5 @@ string Dog::getBark() {
 void Dog::print() {
 	Animal::print();
 
-	cout << this->bark << endl;
+	cout << "- " << this->bark << endl;
 }
