@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01. StaticPolymorphism", "0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02. VirtualMembersBasePointers", "02. VirtualMembersBasePointers\02. VirtualMembersBasePointers.vcxproj", "{5CA1A11A-24A7-4975-ABAF-DAB5603A8F36}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03. PitfallNoVirtualdestructor", "03. PitfallNoVirtualdestructor\03. PitfallNoVirtualdestructor.vcxproj", "{499E9207-E2AA-425C-B253-61C0EB0EFB16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{5CA1A11A-24A7-4975-ABAF-DAB5603A8F36}.Release|x64.Build.0 = Release|x64
 		{5CA1A11A-24A7-4975-ABAF-DAB5603A8F36}.Release|x86.ActiveCfg = Release|Win32
 		{5CA1A11A-24A7-4975-ABAF-DAB5603A8F36}.Release|x86.Build.0 = Release|Win32
+		{499E9207-E2AA-425C-B253-61C0EB0EFB16}.Debug|x64.ActiveCfg = Debug|x64
+		{499E9207-E2AA-425C-B253-61C0EB0EFB16}.Debug|x64.Build.0 = Debug|x64
+		{499E9207-E2AA-425C-B253-61C0EB0EFB16}.Debug|x86.ActiveCfg = Debug|Win32
+		{499E9207-E2AA-425C-B253-61C0EB0EFB16}.Debug|x86.Build.0 = Debug|Win32
+		{499E9207-E2AA-425C-B253-61C0EB0EFB16}.Release|x64.ActiveCfg = Release|x64
+		{499E9207-E2AA-425C-B253-61C0EB0EFB16}.Release|x64.Build.0 = Release|x64
+		{499E9207-E2AA-425C-B253-61C0EB0EFB16}.Release|x86.ActiveCfg = Release|Win32
+		{499E9207-E2AA-425C-B253-61C0EB0EFB16}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
