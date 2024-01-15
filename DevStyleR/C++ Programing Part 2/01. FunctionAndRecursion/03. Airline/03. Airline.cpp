@@ -1,6 +1,6 @@
 #include <iostream>
 
-void findSeat(int* seats) {
+void findSeat(int seats[]) {
     for (int i = 0; i < 10; ++i) {
         int currSeat;
         std::cout << "Witch seat you want? ";
@@ -11,10 +11,10 @@ void findSeat(int* seats) {
             std::cout << "Your seat is " << currSeat << std::endl;
         }
         else {
-            for (int i = 0; i < 10; ++i) {
-                if (seats[i] == 0) {
-                    seats[i] = 1;
-                    std::cout << "Your seat is " << i + 1 << std::endl;
+            for (int j = 0; j < 10; ++j) {
+                if (seats[j] == 0) {
+                    seats[j] = 1;
+                    std::cout << "Your seat is " << j + 1 << std::endl;
                     break;
                 }
             }
@@ -22,15 +22,19 @@ void findSeat(int* seats) {
     }
 }
 
+void printSeats(int seats[]) {
+    for (int i = 0; i < 10; ++i) {
+        std::cout << seats[i] << " ";
+    }
+    std::cout << std::endl;
+}
+
 int main() {
     int seats[10] {};
 
     findSeat(seats);
 
-    for (int i = 0; i < 10; ++i) {
-        std::cout << seats[i] << " ";
-    }
-    std::cout << std::endl;
+    printSeats(seats);
 
     return 0;
 }
