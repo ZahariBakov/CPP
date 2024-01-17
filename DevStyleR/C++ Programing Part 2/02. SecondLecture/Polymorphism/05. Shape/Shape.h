@@ -6,7 +6,7 @@ class Shape {
 public:
 	Shape(int);
 
-	virtual int getArea();
+	virtual double getArea();
 	int getA();
 
 	void setA(int);

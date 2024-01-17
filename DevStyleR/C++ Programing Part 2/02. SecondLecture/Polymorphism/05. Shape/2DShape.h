@@ -6,7 +6,11 @@ class TwoDShape : public Shape {
 public:
 	TwoDShape(int);
 
-	int getArea();
+	double getArea();
+
+	virtual void position();
+	virtual bool fill();
+	virtual void draw();
 	
 	void print();
 

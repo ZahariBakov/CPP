@@ -2,7 +2,7 @@
 
 Shape::Shape(int side) : a(side) {}
 
-int Shape::getArea() {
+double Shape::getArea() {
 	std::cout << "In shape the area is" << std::endl;
 
 	return 0;

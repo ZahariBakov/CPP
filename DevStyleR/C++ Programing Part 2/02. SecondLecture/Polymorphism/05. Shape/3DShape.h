@@ -6,7 +6,7 @@ class ThreeDShape : public Shape {
 public:
 	ThreeDShape(int, int);
 
-	int getArea();
+	double getArea();
 	int getVolume();
 	int getH();
 

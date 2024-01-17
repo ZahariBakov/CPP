@@ -2,7 +2,7 @@
 
 ThreeDShape::ThreeDShape(int a, int h) : Shape(a), h(h) {}
 
-int ThreeDShape::getArea() {
+double ThreeDShape::getArea() {
 	std::cout << "In 3D getArea." << std::endl;
 
 	return 0;
