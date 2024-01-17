@@ -31,7 +31,20 @@ int main() {
 
     for (size_t i = 0; i < myShape.size(); ++i) {
         myShape[i]->print();
-        myShape[i]->getArea();
+
+        TwoDShape* twoDShape = dynamic_cast<TwoDShape*>(myShape[i]);
+        if (twoDShape) {
+            std::cout << "It's a TwoDShape." << std::endl;
+            twoDShape->getArea();
+        }
+
+        ThreeDShape* threeDShape = dynamic_cast<ThreeDShape*>(myShape[i]);
+        if (threeDShape) {
+            std::cout << "It's a ThreeDShape." << std::endl;
+            threeDShape->getArea();
+            threeDShape->getVolume();
+        }
+
         std::cout << std::endl;
     }
 
