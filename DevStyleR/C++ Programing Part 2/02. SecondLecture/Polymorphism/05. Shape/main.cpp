@@ -68,7 +68,6 @@ int main() {
         if (twoDShape) {
             std::cout << "It's a TwoDShape." << std::endl;
             twoDShape->getArea();
-            twoDShape->print();
             twoDShape->position();
             twoDShape->fill();
             twoDShape->draw();

@@ -28,7 +28,9 @@ bool Square::fill() {
 }
 
 void Square::draw() {
+	std::cout << '*' * this->getA() << std::endl;
 	std::cout << "Square is drawing..." << std::endl;
+	std::cout << '*' * this->getA() << std::endl;
 }
 
 void Square::print() {

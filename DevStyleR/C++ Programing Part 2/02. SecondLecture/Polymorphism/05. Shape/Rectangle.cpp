@@ -3,7 +3,7 @@
 Rectangle::Rectangle(int a, int b) : TwoDShape(a), b(b) {}
 
 double Rectangle::getArea() {
-	double area = this->getA() * this->b;
+	double area = this->getA() * this->getB();
 
 	std::cout << "In Rectangle area is " << area << std::endl;
 
