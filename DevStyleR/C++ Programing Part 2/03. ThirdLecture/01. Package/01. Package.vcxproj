@@ -130,10 +130,12 @@
     <ClCompile Include="Address.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Package.cpp" />
+    <ClCompile Include="TwoDayPackage.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Address.h" />
     <ClInclude Include="Package.h" />
+    <ClInclude Include="TwoDayPackage.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,5 +1,4 @@
 #include "Package.h"
-#include <iomanip>
 
 Package::Package(double basePrice, double weight, Address sender, Address recipient) 
 	: _senderAddress(sender), _recipientAddress(recipient) {
@@ -33,7 +32,4 @@ void Package::print() {
 
 	std::cout << "Recepient: \n";
 	this->_recipientAddress.print();
-
-	double result = calculateCost();
-	std::cout << "\n Price: " << std::fixed << std::setprecision(2) << result << "lv." << std::endl;
 }
