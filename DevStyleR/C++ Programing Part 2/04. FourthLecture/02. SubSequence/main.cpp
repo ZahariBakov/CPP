@@ -36,8 +36,6 @@ int main() {
             
             currCount = 0;
         }
-
-        
     }
     int key;
     int value = 0;
