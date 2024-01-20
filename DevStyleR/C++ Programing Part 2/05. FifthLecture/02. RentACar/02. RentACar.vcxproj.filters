@@ -24,12 +24,18 @@
     <ClCompile Include="FamilyCar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LuxuryCar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FamilyCar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LuxuryCar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
