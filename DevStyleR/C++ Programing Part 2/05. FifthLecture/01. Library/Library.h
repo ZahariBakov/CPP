@@ -1,8 +1,15 @@
 #pragma once
 
+#include <vector>
+
 #include "Book.h"
 
-class Library : public Book {
+class Library {
 public:
-	Library();
+	void addBook(Book);
+	void print();
+	void findBook(std::string);
+
+private:
+	std::vector<Book> books;
 };
