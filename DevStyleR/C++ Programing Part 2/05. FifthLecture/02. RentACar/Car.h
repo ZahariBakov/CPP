@@ -5,7 +5,7 @@
 
 class Car {
 public:
-	Car(std::string, std::string, std::string, std::string, std::string, std::string, double, int = 0, int = 0);
+	Car(std::string, std::string, std::string, std::string, std::string, std::string, double, int = 0);
 
 	void setMake(std::string);
 	void setModel(std::string);
@@ -15,7 +15,6 @@ public:
 	void setPlate(std::string);
 	void setFuelConsum(double);
 	void setDayTax(int);
-	void setKmTax(int);
 
 	std::string getMake();
 	std::string getModel();
@@ -25,7 +24,6 @@ public:
 	std::string getPlate();
 	double      getFuelConsum();
 	int         getDayTax();
-	int         getKmTax();
 
 	virtual double calculatePrice();
 
@@ -38,5 +36,4 @@ private:
 	std::string _plate;
 	double      _fuelConsumption;
 	int         _taxPerDay;
-	int         _taxPerKM;
 };

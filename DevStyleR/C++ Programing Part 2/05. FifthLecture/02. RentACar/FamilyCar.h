@@ -4,7 +4,11 @@
 
 class FamilyCar : public Car {
 public:
-	double calculatePrice();
+	FamilyCar(std::string make, std::string model, std::string type, std::string color,
+		std::string vin, std::string plate, double fuelConsumption,
+		int taxPerDay);
+
+	double calculatePrice() override;
 
 private:
 

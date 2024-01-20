@@ -1,7 +1,7 @@
 #include "Car.h"
 
 Car::Car(std::string make, std::string model, std::string type, std::string color, std::string vin, std::string plate, 
-	double fuel, int dayTax, int kmTax) {
+	double fuel, int dayTax) {
 	setMake(make);
 	setModel(model);
 	setType(type);
@@ -10,7 +10,6 @@ Car::Car(std::string make, std::string model, std::string type, std::string colo
 	setPlate(plate);
 	setFuelConsum(fuel);
 	setDayTax(dayTax);
-	setKmTax(kmTax);
 }
 
 void Car::setMake(std::string make) {
@@ -45,10 +44,6 @@ void Car::setDayTax(int day) {
 	this->_taxPerDay = day;
 }
 
-void Car::setKmTax(int km) {
-	this->_taxPerKM = km;
-}
-
 std::string Car::getMake() {
 	return this->_make;
 }
@@ -79,10 +74,6 @@ double Car::getFuelConsum() {
 
 int Car::getDayTax() {
 	return this->_taxPerDay;
-}
-
-int Car::getKmTax() {
-	return this->_taxPerKM;
 }
 
 double Car::calculatePrice() {
