@@ -25,5 +25,7 @@ double FamilyCar::calculatePrice() {
     int dayTax = this->getDayTax();
 	double kmTax = getKmTax(dayTax, this->getMake());
 
+    Car::calculatePrice();
+
     return dayTax * kmTax;
 }

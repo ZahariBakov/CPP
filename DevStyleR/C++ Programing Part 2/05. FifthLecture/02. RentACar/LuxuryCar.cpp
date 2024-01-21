@@ -1,10 +1,44 @@
 #include "LuxuryCar.h"
 
-double getLuxuryKmTax(int dayTax, std::string car) {
+int calculateLuxTax() {
+    int luxTax = 0;
+    char answer;
+
+    std::cout << "Do you want to use additionalextras? y/n " << std::endl;
+    std::cin >> answer;
+
+    if (answer == 'y' || answer == 'Y') {
+        std::cout << " MENU " << std::endl;
+        std::cout << "Champagne - 100lv. - press 1" << std::endl;
+        std::cout << "Wine - 50lv. - press 2" << std::endl;
+        std::cout << "Chocolate - 40lv. - press 3" << std::endl;
+        std::cin >> luxTax;
+
+        if (luxTax == 1) {
+            luxTax = 100;
+        }
+        else if (luxTax == 2) {
+            luxTax = 50;
+        }
+        else if (luxTax == 3) {
+            luxTax = 40;
+        }
+        else {
+            std::cout << "Invalid choise. " << std::endl;
+        }
+    }
+    else {
+        std::cout << "You will not enjoy additional comfort. " << std::endl;
+    }
+
+    return luxTax;
+}
+
+double calculateKmTax(int dayTax) {
     double km;
     double tax;
 
-    std::cout << "Enter the distance traveled in kilometers for car " << car << ". " << std::endl;
+    std::cout << "Enter the distance traveled in kilometers." << std::endl;
     std::cin >> km;
 
     if (km < 200.0) {
@@ -22,8 +56,12 @@ LuxuryCar::LuxuryCar(std::string make, std::string model, std::string type, std:
 	: Car(make, model, type, color, vin, plate, fuelConsumption, taxPerDay) {}
 
 double LuxuryCar::calculatePrice() {
+    std::cout << "For car " << this->getMake() << ". ";
 	int dayTax = this->getDayTax();
-	double kmTax = getLuxuryKmTax(dayTax, this->getMake());
+    int luxTax = calculateLuxTax();
+	double kmTax = calculateKmTax(dayTax);
 
-	return dayTax * kmTax;
+    Car::calculatePrice();
+
+    return (dayTax * kmTax) + luxTax;
 }

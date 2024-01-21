@@ -77,5 +77,6 @@ int Car::getDayTax() {
 }
 
 double Car::calculatePrice() {
+	std::cout << "Price is: ";
 	return 0.0;
 }
