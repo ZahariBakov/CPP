@@ -4,12 +4,15 @@
 
 class User {
 public:
-	User(std::string);
+	User(std::string, std::vector<Order>&);
 
-	void setUserName(std::string);
+	void setUsername(std::string);
 
-	std::string getUserName();
+	std::string getUsername();
+
+	void printBill();
 
 private:
-	std::string _userName;
+	std::string _username;
+	std::vector<Order> _orders;
 };
