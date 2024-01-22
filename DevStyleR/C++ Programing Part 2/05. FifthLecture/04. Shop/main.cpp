@@ -61,8 +61,11 @@ int main() {
     //s1.bestClient();
 
     // Search by drink type
-    s1.searchByDrinks("whiskey");
-    s1.searchByDrinks("coffee");
+    //s1.searchByDrinks("whiskey");
+    //s1.searchByDrinks("coffee");
+
+    // Search by drink type and over price
+    s1.searchByDrinksAndMoney("whiskey", 100);
 
     return 0;
 }

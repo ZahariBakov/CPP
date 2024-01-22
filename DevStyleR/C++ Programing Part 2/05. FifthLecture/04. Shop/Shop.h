@@ -10,7 +10,7 @@ public:
 	void soldDrinks();
 	void bestClient();
 	void searchByDrinks(std::string);
-	//void searchByDrinksAndMoney();
+	void searchByDrinksAndMoney(std::string, double);
 
 private:
 	std::vector<User*> _users;

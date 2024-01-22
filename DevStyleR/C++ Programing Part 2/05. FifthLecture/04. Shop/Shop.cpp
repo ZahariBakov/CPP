@@ -74,3 +74,20 @@ void Shop::searchByDrinks(std::string type) {
 	std::cout << std::endl;
 
 }
+
+void Shop::searchByDrinksAndMoney(std::string type, double price) {
+	std::cout << "Searching for " << type << " over price " << price << "...\n";
+	for (auto user : _users) {
+		for (auto order : user->getOrders()) {
+			for (auto drink : order->getDrinks()) {
+				if (type == drink->getType()) {
+					if (price < drink->calculatePrice()) {
+						std::cout << user->getUsername() << std::endl;
+						drink->print();
+					}	
+				}
+			}
+		}
+	}
+	std::cout << std::endl;
+}
