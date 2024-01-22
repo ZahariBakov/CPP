@@ -1,6 +1,6 @@
 #include "NonAlcoholic.h"
 
-NonAlcoholic::NonAlcoholic(std::string name, double price, int quantity, std::string type, double liters, int cityTax) 
+NonAlcoholic::NonAlcoholic(std::string name, double price, int quantity, std::string type, double liters, double cityTax)
 						   : Drinks(name, price, quantity, type) {
 	setLiters(liters);
 	setCityTax(cityTax);
@@ -15,7 +15,7 @@ void NonAlcoholic::setLiters(double l) {
 	this->_liters = l;
 }
 
-void NonAlcoholic::setCityTax(int cityTax) {
+void NonAlcoholic::setCityTax(double cityTax) {
 	if (cityTax < 0) {
 		std::cout << "City tax must be positive number, is set to 0" << std::endl;
 		cityTax = 0;
@@ -28,7 +28,7 @@ double NonAlcoholic::getLiters() {
 	return this->_liters;
 }
 
-int NonAlcoholic::getCityTax() {
+double NonAlcoholic::getCityTax() {
 	return this->_cityTax;
 }
 
