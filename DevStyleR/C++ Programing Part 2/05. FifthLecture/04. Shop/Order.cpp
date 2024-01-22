@@ -39,7 +39,7 @@ std::string Order::getDate() {
 	return this->_date;
 }
 
-double Order::getTotoalPrice() {
+double Order::getTotalPrice() {
 	return this->_totalPrice;
 }
 

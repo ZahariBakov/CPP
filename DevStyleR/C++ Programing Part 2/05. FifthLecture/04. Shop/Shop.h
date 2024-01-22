@@ -8,8 +8,8 @@ public:
 	Shop(std::vector<User*>);
 
 	void soldDrinks();
-	//void bestClient();
-	//void searchByDrinks();
+	void bestClient();
+	void searchByDrinks(std::string);
 	//void searchByDrinksAndMoney();
 
 private:

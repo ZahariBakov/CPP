@@ -47,16 +47,22 @@ int main() {
     orders2.push_back(o4Ptr);
 
     User* u1Ptr = new User("Ivan", orders);
-    u1Ptr->printBill();
     User* u2Ptr = new User("Gosho", orders2);
-    u2Ptr->printBill();
 
     std::vector<User*> users;
     users.push_back(u1Ptr);
     users.push_back(u2Ptr);
 
     Shop s1(users);
-    s1.soldDrinks();
+    // All sold drinks by type and name
+    //s1.soldDrinks();
+    
+    // Best client spend the most money
+    //s1.bestClient();
+
+    // Search by drink type
+    s1.searchByDrinks("whiskey");
+    s1.searchByDrinks("coffee");
 
     return 0;
 }

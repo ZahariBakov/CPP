@@ -17,7 +17,7 @@ public:
 
 	int         getNumber();
 	std::string getDate();
-	double      getTotoalPrice();
+	double      getTotalPrice();
 	std::vector<Drinks*> getDrinks();
 
 	double calculateTotalPrice();
