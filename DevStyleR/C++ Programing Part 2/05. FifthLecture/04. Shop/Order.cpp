@@ -43,6 +43,10 @@ double Order::getTotoalPrice() {
 	return this->_totalPrice;
 }
 
+std::vector<Drinks*> Order::getDrinks() {
+	return this->_drinks;
+}
+
 void Order::printOrder() {
 	std::cout << "Your order number is: " << this->getNumber() << ", total price is: " << this->calculateTotalPrice() << "lv." << std::endl;;
 }

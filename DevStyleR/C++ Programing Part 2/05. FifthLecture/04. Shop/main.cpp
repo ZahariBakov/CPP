@@ -3,6 +3,7 @@
 #include "NonAlcoholic.h"
 #include "Order.h"
 #include "User.h"
+#include "Shop.h"
 
 int main() {
     Drinks* a1Ptr = new Alcoholic("Jack Daniels", 25.80, 1, "whiskey", 38.5, 3);
@@ -32,23 +33,30 @@ int main() {
     drinks4.push_back(a4Ptr);
     drinks4.push_back(na4Ptr);
 
-    Order o1(drinks, "20.01.2024");
-    Order o2(drinks2, "22.01.2024");
-    Order o3(drinks3, "18.01.2024");
-    Order o4(drinks4, "21.01.2024");
+    Order* o1Ptr = new Order(drinks, "20.01.2024");
+    Order* o2Ptr = new Order(drinks2, "22.01.2024");
+    Order* o3Ptr = new Order(drinks3, "18.01.2024");
+    Order* o4Ptr = new Order(drinks4, "21.01.2024");
 
-    std::vector<Order> orders;
-    orders.push_back(o1);
-    orders.push_back(o2);
+    std::vector<Order*> orders;
+    orders.push_back(o1Ptr);
+    orders.push_back(o2Ptr);
 
-    std::vector<Order> orders2;
-    orders2.push_back(o3);
-    orders2.push_back(o4);
+    std::vector<Order*> orders2;
+    orders2.push_back(o3Ptr);
+    orders2.push_back(o4Ptr);
 
-    User u1("Ivan", orders);
-    u1.printBill();
-    User u2("Gosho", orders2);
-    u2.printBill();
+    User* u1Ptr = new User("Ivan", orders);
+    u1Ptr->printBill();
+    User* u2Ptr = new User("Gosho", orders2);
+    u2Ptr->printBill();
+
+    std::vector<User*> users;
+    users.push_back(u1Ptr);
+    users.push_back(u2Ptr);
+
+    Shop s1(users);
+    s1.soldDrinks();
 
     return 0;
 }

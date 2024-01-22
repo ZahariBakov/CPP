@@ -18,9 +18,10 @@ public:
 	int         getNumber();
 	std::string getDate();
 	double      getTotoalPrice();
+	std::vector<Drinks*> getDrinks();
 
 	double calculateTotalPrice();
-	void printOrder();
+	void   printOrder();
 
 private:
 	int                  _number;
