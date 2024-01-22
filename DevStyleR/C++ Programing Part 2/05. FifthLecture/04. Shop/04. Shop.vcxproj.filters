@@ -21,9 +21,21 @@
     <ClCompile Include="Drinks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Alcoholic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NonAlcoholic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Drinks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Alcoholic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NonAlcoholic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

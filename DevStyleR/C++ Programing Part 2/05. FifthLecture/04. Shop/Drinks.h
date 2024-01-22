@@ -17,8 +17,8 @@ public:
 	int         getQuantity();
 	std::string getType();
 
-	void print();
-	double calculatePrice();
+	virtual void   print();
+	virtual double calculatePrice();
 
 private:
 	std::string _name;
