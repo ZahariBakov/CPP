@@ -4,7 +4,7 @@ Admin::Admin(std::string name, std::string pass) : User(name, pass) {}
 
 void Admin::addTeam(Team newTeam) {
 	this->_teams.push_back(newTeam);
-	std::cout << "Adding new team " << newTeam.getName() << std::endl;
+	std::cout << "Adding new team " << newTeam.getName() << " - " << newTeam.getCity() << std::endl;
 }
 
 void Admin::removeTeam(Team t) {

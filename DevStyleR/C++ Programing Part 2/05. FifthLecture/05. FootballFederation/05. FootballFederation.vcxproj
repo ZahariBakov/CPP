@@ -129,11 +129,13 @@
   <ItemGroup>
     <ClCompile Include="Admin.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Schedule.cpp" />
     <ClCompile Include="Team.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h" />
+    <ClInclude Include="Schedule.h" />
     <ClInclude Include="Team.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>
