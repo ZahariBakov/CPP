@@ -1,5 +1,7 @@
 #include "Schedule.h"
 
+#include <typeinfo>
+
 static int findFreeDay(std::map<int, std::pair<Team*, Team*>> matches) {
 	int freeDay = 1;
 
@@ -17,29 +19,66 @@ static int findFreeDay(std::map<int, std::pair<Team*, Team*>> matches) {
 	return freeDay;
 }
 
-void Schedule::addMatch(int day, Team* host, Team* guest) {
-	int lastDay = 0;
+void Schedule::addMatch(Admin* user, int day, Team* host, Team* guest) {
+	std::string type = typeid(user).name();
 
-	for (auto& match : this->_matches) {
-		lastDay = match.first;
-		if (day == match.first) {
-			std::cout << day << " day is already taken. \n";
+	if (type != "class Admin * __ptr64") {
+		std::cout << "You do not have permission to do this." << std::endl;
+	}
+	else {
+		int lastDay = 0;
+
+		for (auto& match : this->_matches) {
+			lastDay = match.first;
+			if (day == match.first) {
+				std::cout << day << " day is already taken. \n";
+				day = findFreeDay(this->_matches);
+				std::cout << "Day is set to " << day << std::endl;
+			}
+			else if (day <= 0) {
+				std::cout << day << " day must be positive number greater than 0. \n";
+				day = findFreeDay(this->_matches);
+				std::cout << "Day is set to " << day << std::endl;
+			}
+		}
+
+		if (day > lastDay + 1) {
+			std::cout << day << " day is too larger number." << std::endl;
 			day = findFreeDay(this->_matches);
 			std::cout << "Day is set to " << day << std::endl;
 		}
-		else if (day <= 0) {
-			std::cout << day << " day must be positive number greater than 0. \n";
-			day = findFreeDay(this->_matches);
-			std::cout << "Day is set to " << day << std::endl;
-		}
-	}
 
-	if (day > lastDay + 1) {
-		std::cout << day << " day is too larger number." << std::endl;
-		day = findFreeDay(this->_matches);
-		std::cout << "Day is set to " << day << std::endl;
+		this->_matches[day] = std::make_pair(host, guest);
+
+		std::cout << "Day " << day << " match between " << this->_matches[day].first->getName() << " and "
+			<< this->_matches[day].second->getName() << " teams has been added." << std::endl;
 	}
-	this->_matches[day] = std::make_pair(host, guest);
+}
+
+void Schedule::updateMatch(Admin* user, int day, Team* host, Team* guest) {
+	std::string type = typeid(user).name();
+
+	if (type != "class Admin * __ptr64") {
+		std::cout << "You do not have permission to do this." << std::endl;
+	}
+	else {
+		std::cout << "Day " << day << " match between " << this->_matches[day].first->getName() << " and "
+			<< this->_matches[day].second->getName() << " teams has been updated." << std::endl;
+		this->_matches[day] = std::make_pair(host, guest);
+	}
+}
+
+void Schedule::deleteMatch(Admin* user, int day) {
+	std::string type = typeid(user).name();
+
+	if (type != "class Admin * __ptr64") {
+		std::cout << "You do not have permission to do this." << std::endl;
+	}
+	else {
+		std::cout << "Day " << day << " match between " << this->_matches[day].first->getName() << " and "
+			<< this->_matches[day].second->getName() << " teams has been deleted." << std::endl;
+		this->_matches.erase(day);
+	}
 }
 
 void Schedule::printSchedule() {

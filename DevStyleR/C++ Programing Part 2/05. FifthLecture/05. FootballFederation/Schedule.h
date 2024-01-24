@@ -6,7 +6,9 @@
 
 class Schedule {
 public:
-	void addMatch(int, Team*, Team*);
+	void addMatch(Admin*, int, Team*, Team*);
+	void updateMatch(Admin*, int, Team*, Team*);
+	void deleteMatch(Admin*, int);
 
 	void printSchedule();
 

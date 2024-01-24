@@ -35,13 +35,20 @@ int main() {
     std::cout << std::endl;
 
     Schedule schedule;
-    schedule.addMatch(1, &team1, &team2);
-    schedule.addMatch(1, &team1, &team3);
-    schedule.addMatch(5, &team3, &team2);
-    schedule.addMatch(0, &team2, &team1);
-    schedule.addMatch(4, &team3, &team1);
-    schedule.addMatch(6, &team2, &team3);
+    schedule.addMatch(&a1, 1, &team1, &team2);
+    schedule.addMatch(&a1, 1, &team1, &team3);
+    schedule.addMatch(&a1, 5, &team3, &team2);
+    schedule.addMatch(&a1, 0, &team2, &team1);
+    schedule.addMatch(&a1, 4, &team3, &team1);
+    schedule.addMatch(&a1, 6, &team2, &team3);
+    schedule.printSchedule();
 
+    schedule.updateMatch(&a1, 2, &team3, &team1);
+    schedule.updateMatch(&a1, 5, &team1, &team3);
+
+    schedule.deleteMatch(&a1, 2);
+
+    schedule.addMatch(&a1, 7, &team3, &team1);
     schedule.printSchedule();
 
     return 0;
