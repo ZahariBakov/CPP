@@ -81,6 +81,55 @@ void Schedule::deleteMatch(Admin* user, int day) {
 	}
 }
 
+void Schedule::addReferee(Admin* user, int day, std::string refereeName) {
+	std::string type = typeid(user).name();
+
+	if (type != "class Admin * __ptr64") {
+		std::cout << "You do not have permission to do this." << std::endl;
+	}
+	else {
+		for (auto& match : this->_matches) {
+			if (day == match.first) {
+				this->_refereeMatches[day] = refereeName;
+				std::cout << "Referee '" << refereeName << "' has been appointed to the football match between '" << match.second.first->getName()
+					<< "' and '" << match.second.second->getName() << "', which will be played on day " << match.first << "." << std::endl;
+			}
+		}
+	}
+}
+
+void Schedule::addResult(Referee* user, Team* host, Team* guest) {
+	std::string type = typeid(user).name();
+
+	if (type != "class Referee * __ptr64") {
+		std::cout << "You do not have permission to do this." << std::endl;
+	}
+	else {
+		for (auto match : this->_refereeMatches) {
+			int day = match.first;
+			std::cout << "For match between " << this->_matches[day].first->getName() << " and "
+				<< this->_matches[day].second->getName() << std::endl;
+			int homeGoals = 0;
+			int guestGolas = 0;
+			std::cout << "Enter goals of " << this->_matches[day].first->getName() << std::endl;
+			std::cin >> homeGoals;
+			std::cout << "Enter goals of " << this->_matches[day].second->getName() << std::endl;
+			std::cin >> guestGolas;
+
+			if (homeGoals > guestGolas) {
+				host->updatePoints(3);
+			}
+			else if (homeGoals < guestGolas) {
+				guest->updatePoints(3);
+			}
+			else {
+				host->updatePoints(1);
+				guest->updatePoints(1);
+			}
+		}
+	}
+}
+
 void Schedule::printSchedule() {
 	std::cout << "\n              --- Schedule ---" << std::endl;
 	for (auto& match : this->_matches) {

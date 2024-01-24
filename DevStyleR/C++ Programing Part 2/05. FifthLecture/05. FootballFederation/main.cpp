@@ -2,6 +2,20 @@
 #include "Team.h"
 #include"Admin.h"
 #include "Schedule.h"
+#include "Referee.h"
+
+void printRanking(Team* t1, Team* t2, Team* t3) {
+    std::map<int, std::string, std::greater<int>> ranking;
+
+    ranking[t1->getPoints()] = t1->getName();
+    ranking[t2->getPoints()] = t2->getName();
+    ranking[t3->getPoints()] = t3->getName();
+
+    std::cout << "       ------ Ranking -----" << std::endl;
+    for (auto team : ranking) {
+        std::cout << team.second << " - " << team.first << " points" << std::endl;
+    }
+}
 
 int main() {
     // Create admin
@@ -50,6 +64,22 @@ int main() {
 
     schedule.addMatch(&a1, 7, &team3, &team1);
     schedule.printSchedule();
+
+    Referee r1("First referee", "pass2");
+    Referee r2("Second referee", "pass3");
+
+    schedule.addReferee(&a1, 1, r1.getName());
+    schedule.addReferee(&a1, 7, r2.getName());
+    schedule.addReferee(&a1, 3, r1.getName());
+    schedule.addReferee(&a1, 4, r2.getName());
+    schedule.addReferee(&a1, 5, r1.getName());
+    schedule.addReferee(&a1, 6, r2.getName());
+
+    std::cout << "----------- The season begins -----------" << std::endl;
+
+    schedule.addResult(&r1, &team1, &team2);
+
+    printRanking(&team1, &team2, &team3);
 
     return 0;
 }
