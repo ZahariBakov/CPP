@@ -3,6 +3,7 @@
 #include"Admin.h"
 #include "Schedule.h"
 #include "Referee.h"
+#include "Fans.h"
 
 void printRanking(Team* t1, Team* t2, Team* t3) {
     std::map<int, std::string, std::greater<int>> ranking;
@@ -67,6 +68,13 @@ int main() {
 
     Referee r1("First referee", "pass2");
     Referee r2("Second referee", "pass3");
+
+    Fans f1("First Real Madrid fan", "pass4");
+    Fans f2("First Inter fan", "pass5");
+    Fans f3("First Liverpool fan", "pass6");
+    Fans f4("Second Real Madrid fan", "pass7");
+    Fans f5("Second Inter fan", "pass8");
+    Fans f6("Second Liverpool fan", "pass9");
 
     schedule.addReferee(&a1, 1, r1.getName());
     schedule.addReferee(&a1, 7, r2.getName());
