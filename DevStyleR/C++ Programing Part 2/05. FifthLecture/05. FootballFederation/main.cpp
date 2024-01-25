@@ -13,7 +13,7 @@ void printRanking(Team* t1, Team* t2, Team* t3) {
     ranking[t3->getPoints()] = t3->getName();
 
     std::cout << "       ------ Ranking -----" << std::endl;
-    for (auto team : ranking) {
+    for (auto& team : ranking) {
         std::cout << team.second << " - " << team.first << " points" << std::endl;
     }
 }
@@ -23,7 +23,7 @@ int main() {
     Admin a1("Zahari", "pass1");
 
     // Create teams
-    Team team1("Ral Madrid", "Madrid");
+    Team team1("Real Madrid", "Madrid");
     Team team2("Inter", "Milan");
     Team team3("Liverpool", "Liverpool");
 
@@ -76,6 +76,15 @@ int main() {
     Fans f5("Second Inter fan", "pass8");
     Fans f6("Second Liverpool fan", "pass9");
 
+    schedule.buyTicket(&f1, 1);
+    schedule.buyTicket(&f2, 1);
+    schedule.buyTicket(&f3, 3);
+    schedule.buyTicket(&f4, 7);
+    schedule.buyTicket(&f1, 7);
+    schedule.buyTicket(&f5, 6);
+
+    schedule.printMoneyFromTicket(&a1);
+
     schedule.addReferee(&a1, 1, r1.getName());
     schedule.addReferee(&a1, 7, r2.getName());
     schedule.addReferee(&a1, 3, r1.getName());
@@ -86,6 +95,11 @@ int main() {
     std::cout << "----------- The season begins -----------" << std::endl;
 
     schedule.addResult(&r1, &team1, &team2);
+    schedule.addResult(&r2, &team1, &team3);
+    schedule.addResult(&r1, &team3, &team2);
+    schedule.addResult(&r2, &team2, &team1);
+    schedule.addResult(&r1, &team3, &team1);
+    schedule.addResult(&r2, &team2, &team3);
 
     printRanking(&team1, &team2, &team3);
 

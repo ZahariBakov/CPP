@@ -1,8 +1,6 @@
 #include "Admin.h"
 
-Admin::Admin(std::string name, std::string pass) : User(name, pass) {
-	this->_moneyFromTickets = 0;
-}
+Admin::Admin(std::string name, std::string pass) : User(name, pass) {}
 
 void Admin::addTeam(Team newTeam) {
 	this->_teams.push_back(newTeam);
@@ -31,14 +29,6 @@ void Admin::updateTeam(Team t) {
 			break;
 		}
 	}
-}
-
-int Admin::getMoneyFromTickets() {
-	return this->_moneyFromTickets;
-}
-
-void Admin::updateMoneyFromTickets(int money) {
-	this->_moneyFromTickets += money;
 }
 
 std::vector<Team> Admin::getTeams() {
