@@ -40,7 +40,7 @@ enum Choices { PRINT = 1, UPDATE, NEW, DELETE, END };
 int main()
 {
     // open file for reading and writing
-    fstream inOutCredit("credit.dat", ios::in | ios::out);
+    fstream inOutCredit("credit.txt", ios::in | ios::out);
 
     // exit program if fstream cannot open file
     if (!inOutCredit)
@@ -145,8 +145,7 @@ void updateRecord(fstream& updateFile)
 
     // read first record from file
     ClientData client;
-    updateFile.read(reinterpret_cast<char*>(&client),
-        sizeof(ClientData));
+    updateFile.read(reinterpret_cast<char*>(&client), sizeof(ClientData));
 
     // update record
     if (client.getAccountNumber() != 0)

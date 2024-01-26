@@ -26,7 +26,7 @@ void outputLine(ostream&, const ClientData&); // prototype
 
 int main()
 {
-    ifstream inCredit("credit.dat", ios::in);
+    ifstream inCredit("credit.txt", ios::in);
 
     // exit program if ifstream cannot open file
     if (!inCredit)

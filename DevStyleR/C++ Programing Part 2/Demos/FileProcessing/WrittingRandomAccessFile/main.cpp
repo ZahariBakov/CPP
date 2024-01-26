@@ -24,7 +24,7 @@ int main()
     char firstName[10];
     double balance;
 
-    fstream outCredit("credit.dat", ios::in | ios::out | ios::binary);
+    fstream outCredit("credit.txt", ios::in | ios::out | ios::binary);
 
     // exit program if fstream cannot open file
     if (!outCredit)
@@ -55,12 +55,10 @@ int main()
         client.setBalance(balance);
 
         // seek position in file of user-specified record
-        outCredit.seekp((client.getAccountNumber() - 1) *
-            sizeof(ClientData));
+        outCredit.seekp((client.getAccountNumber() - 1) * sizeof(ClientData));
 
         // write user-specified information in file
-        outCredit.write(reinterpret_cast<const char*>(&client),
-            sizeof(ClientData));
+        outCredit.write(reinterpret_cast<const char*>(&client), sizeof(ClientData));
 
         // enable user to enter another account
         cout << "Enter account number\n? ";

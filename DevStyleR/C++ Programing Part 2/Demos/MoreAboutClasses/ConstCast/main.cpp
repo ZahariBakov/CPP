@@ -20,6 +20,7 @@ int main()
     // const_cast required to allow the const char * returned by maximum  
     // to be assigned to the char * variable maxPtr
     char* maxPtr = const_cast<char*>(maximum(s1, s2));
+    //const char* maxPtr = maximum(s1, s2);
 
     cout << "The larger string is: " << maxPtr << endl;
 

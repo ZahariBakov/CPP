@@ -10,12 +10,13 @@ using std::ostream;
 #include "Base2.h"
 
 // class Derived definition
-class Derived : public Base1, public Base2
-{
+class Derived : public Base1, public Base2 {
 	friend ostream& operator<<(ostream&, const Derived&);
+
 public:
 	Derived(int, char, double);
 	double getReal() const;
+
 private:
 	double real; // derived class's private data
 }; // end class Derived

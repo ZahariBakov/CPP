@@ -6,13 +6,11 @@
 class Base2
 {
 public:
-    Base2(char characterData)
-    {
+    Base2(char characterData) {
         letter = characterData;
     } // end Base2 constructor
 
-    char getData() const
-    {
+    char getData() const {
         return letter;
     } // end function getData
 protected: // accessible to derived classes

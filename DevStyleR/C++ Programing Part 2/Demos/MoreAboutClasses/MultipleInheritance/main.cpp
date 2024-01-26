@@ -7,8 +7,7 @@ using std::endl;
 #include "Base2.h"
 #include "Derived.h"
 
-int main()
-{
+int main() {
     Base1 base1(10), * base1Ptr = 0; // create Base1 object
     Base2 base2('Z'), * base2Ptr = 0; // create Base2 object
     Derived derived(7, 'A', 3.5); // create Derived object

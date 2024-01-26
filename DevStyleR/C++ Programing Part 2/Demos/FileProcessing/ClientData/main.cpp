@@ -13,7 +13,7 @@ using std::exit; // exit function prototype
 #include "ClientData.h" // ClientData class definition
 
 int main() {
-    ofstream outCredit("credit.dat", ios::binary);
+    ofstream outCredit("credit.txt", ios::binary);
 
     // exit program if ofstream could not open file
     if (!outCredit) {
