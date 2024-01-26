@@ -5,8 +5,7 @@ using std::endl;
 
 #include "Date.h" // Date class definition
 
-int main()
-{
+int main() {
     Date d1; // defaults to January 1, 1900
     Date d2(12, 27, 1992); // December 27, 1992
     Date d3(0, 99, 8045); // invalid date
@@ -29,7 +28,6 @@ int main()
         << "  d4 is " << d4 << endl;
     cout << "d4++ is " << d4++ << endl;
     cout << "  d4 is " << d4 << endl;
+
     return 0;
 } // end main
-
-

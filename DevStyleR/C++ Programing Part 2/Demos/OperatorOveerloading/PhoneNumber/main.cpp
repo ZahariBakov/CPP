@@ -7,8 +7,7 @@ using std::endl;
 
 #include "PhoneNumber.h"
 
-int main()
-{
+int main() {
 	PhoneNumber phone; // create object phone
 
 	cout << "Enter phone number in the form (123) 456-7890:" << endl;
@@ -22,6 +21,6 @@ int main()
 	// cout << phone invokes operator<< by implicitly issuing 
 	// the global function call operator<<( cout, phone )
 	cout << phone << endl;
+
 	return 0;
 } // end main
-
