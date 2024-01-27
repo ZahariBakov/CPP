@@ -54,7 +54,7 @@ int Box::getLength() const {
 }
 
 void Box::printBox() {
-    std::cout << "Box size is. Width: " << this->getWidth() << ", Height: " << getHeight() << ", Length: " 
+    std::cout << "Box size is. Width: " << this->getWidth() << ", Height: " << getHeight() << " and Length: " 
         << this->getLength() << std::endl;
 }
 
