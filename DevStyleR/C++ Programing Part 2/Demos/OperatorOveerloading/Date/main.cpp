@@ -12,6 +12,7 @@ int main() {
 
     cout << "d1 is " << d1 << "\nd2 is " << d2 << "\nd3 is " << d3;
     cout << "\n\nd2 += 7 is " << (d2 += 7);
+    cout << "\nd3 -= 7 is " << (d3 -= 7);
 
     d3.setDate(2, 28, 1992);
     cout << "\n\n  d3 is " << d3;

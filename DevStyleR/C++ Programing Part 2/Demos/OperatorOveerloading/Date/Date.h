@@ -16,6 +16,7 @@ public:
 	Date& operator--(); // prefix decrement operator
 	Date operator--(int); // postfix decrement operator
 	const Date& operator+=(int); // add days, modify object
+	const Date& operator-=(int); // subtract days, modify object
 	bool leapYear(int) const; // is date in a leap year?
 	bool endOfMonth(int) const; // is date at the end of month?
 

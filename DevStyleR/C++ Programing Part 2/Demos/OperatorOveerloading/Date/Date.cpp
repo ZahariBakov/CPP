@@ -62,6 +62,15 @@ const Date& Date::operator+=(int additionalDays) {
     return *this; // enables cascading
 } // end function operator+=
 
+// subtract specified number of days to date
+const Date& Date::operator-=(int subtractionalDays) {
+    for (int i = 0; i < subtractionalDays; ++i) {
+        helpDecrement();
+    }
+
+    return *this; // enables cascading
+} // end function operator-=
+
 // if the year is a leap year, return true; otherwise, return false
 bool Date::leapYear(int testYear) const {
     if (testYear % 400 == 0 ||
@@ -117,7 +126,7 @@ void Date::helpDecrement() {
         
         // check if month is 2
         if (month == 2) {
-            if (!endOfMonth(day)) { // checking if it is a leap year
+            if (leapYear(year)) { // checking if it is a leap year
                 day = 29; // if it is a leap year, the day is the 29th
             }
         }
@@ -129,6 +138,7 @@ ostream& operator<<(ostream& output, const Date& d) {
     static std::string monthName[13] = { "", "January", "February",
        "March", "April", "May", "June", "July", "August",
        "September", "October", "November", "December" };
-    output << monthName[d.month] << ' ' << d.day << ", " << d.year;
+    //output << monthName[d.month] << ' ' << d.day << ", " << d.year;
+    output << d.day << ' ' << monthName[d.month] << ", " << d.year;
     return output; // enables cascading
 } // end function operator<<
