@@ -38,6 +38,22 @@ Date Date::operator++(int) {
     return temp; // value return; not a reference return
 } // end function operator++
 
+// overloaded prefix decrement operator 
+Date& Date::operator--() {
+    helpDecrement(); // decrement date
+    return *this; // reference return to create a value
+} // end function operator--
+
+// overloaded postfix decrement operator; note that the  
+// dummy integer parameter does not have a parameter name
+Date Date::operator--(int) {
+    Date temp = *this; // hold current state of object
+    helpDecrement();
+
+    // return decremented, saved, temporary object
+    return temp; // value return; not a reference return
+} // end function operator--
+
 // add specified number of days to date
 const Date& Date::operator+=(int additionalDays) {
     for (int i = 0; i < additionalDays; i++)
@@ -81,6 +97,32 @@ void Date::helpIncrement() {
             day = 1; // first day of new month
         } // end else
 } // end function helpIncrement
+
+// function to help decrement the date
+void Date::helpDecrement() {
+    if (day != 1) { // day is not a first of month
+        day--; // decrement day
+    }
+    else {
+        if (month > 1) { // day is first of month and month is not a first
+            month--; // decrement month
+        }
+        else { // first day of year
+            year--; // decrement year
+            month = 12; // last month of new year
+        }
+
+        // last day of new month
+        day = days[month];
+        
+        // check if month is 2
+        if (month == 2) {
+            if (!endOfMonth(day)) { // checking if it is a leap year
+                day = 29; // if it is a leap year, the day is the 29th
+            }
+        }
+    }
+}
 
 // overloaded output operator
 ostream& operator<<(ostream& output, const Date& d) {

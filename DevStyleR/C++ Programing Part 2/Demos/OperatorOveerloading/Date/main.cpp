@@ -29,5 +29,17 @@ int main() {
     cout << "d4++ is " << d4++ << endl;
     cout << "  d4 is " << d4 << endl;
 
+    Date d5(3, 1, 2004);
+
+    cout << "\n\nTesting the prefix decrement operator:\n"
+        << "  d5 is " << d5 << endl;
+    cout << "--d5 is " << --d5 << endl;
+    cout << "  d5 is " << d5;
+
+    cout << "\n\nTesting the postfix increment operator:\n"
+        << "  d1 is " << d1 << endl;
+    cout << "d1-- is " << d1-- << endl;
+    cout << "  d1 is " << d1 << endl;
+
     return 0;
 } // end main
