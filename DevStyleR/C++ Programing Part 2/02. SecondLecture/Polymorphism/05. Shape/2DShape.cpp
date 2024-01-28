@@ -27,6 +27,7 @@ bool TwoDShape::fill() {
 }
 
 void TwoDShape::draw() {
+	this->fill();
 	std::cout << "2D Shape is drawing..." << std::endl;
 }
 

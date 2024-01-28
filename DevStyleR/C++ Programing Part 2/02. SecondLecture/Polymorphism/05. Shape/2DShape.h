@@ -3,6 +3,7 @@
 #include "Shape.h"
 
 class TwoDShape : public Shape {
+
 public:
 	TwoDShape(int);
 
@@ -13,7 +14,4 @@ public:
 	virtual void draw();
 	
 	void print();
-
-private:
-
 };

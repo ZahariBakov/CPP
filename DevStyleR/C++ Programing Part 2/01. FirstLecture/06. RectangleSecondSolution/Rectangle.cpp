@@ -56,5 +56,3 @@ bool Rectangle::isSquare() {
 int Rectangle::calculateDistance(int first, int second) {
 	return second - first;
 }
-
-

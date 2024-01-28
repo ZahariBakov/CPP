@@ -29,6 +29,7 @@ bool Circle::fill() {
 }
 
 void Circle::draw() {
+	this->fill();
 	std::cout << "Circle is drawing..." << std::endl;
 }
 

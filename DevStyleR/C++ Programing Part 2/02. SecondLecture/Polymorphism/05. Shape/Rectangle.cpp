@@ -37,9 +37,22 @@ bool Rectangle::fill() {
 }
 
 void Rectangle::draw() {
+	this->fill();
 	std::cout << "Rectangle is drawing..." << std::endl;
 }
 
 void Rectangle::print() {
 	std::cout << "In Rectangle print width is " << this->getB() << std::endl;
+}
+
+bool operator<(Rectangle r1, Rectangle r2) {
+	return r1.getArea() < r2.getArea();
+}
+
+bool operator>(Rectangle r1, Rectangle r2) {
+	return r1.getArea() > r2.getArea();
+}
+
+bool operator==(Rectangle r1, Rectangle r2) {
+	return r1.getArea() == r2.getArea();
 }

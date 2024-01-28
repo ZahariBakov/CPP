@@ -19,8 +19,13 @@ int main() {
     std::cout << p4.getY() << std::endl;
 
     Rectangle r1(p1, p2, p3, p4);
-    std::cout << r1.isRectangle() << std::endl;
-    std::cout << r1.isSquare() << std::endl;
+    if (r1.isRectangle()) {
+        std::cout << "This is Rectangle." << std::endl;
+    }
+    
+    if (r1.isSquare()) {
+        std::cout << "This is Square." << std::endl;
+    }
 
     return 0;
 }

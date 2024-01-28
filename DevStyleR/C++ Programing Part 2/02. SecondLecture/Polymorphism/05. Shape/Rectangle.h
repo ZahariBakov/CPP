@@ -3,6 +3,10 @@
 #include "2DShape.h"
 
 class Rectangle : public TwoDShape {
+	friend bool operator<(Rectangle, Rectangle);
+	friend bool operator>(Rectangle, Rectangle);
+	friend bool operator==(Rectangle, Rectangle);
+
 public:
 	Rectangle(int, int);
 
