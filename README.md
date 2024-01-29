@@ -20,7 +20,7 @@ This repository serves as my personal workspace for practicing C++ programming. 
 
 ## Usage
 
-Feel free to browse through the `demos` and `tasks` directories to explore the code.
+Feel free to browse through the directories to explore the code.
 
 To run any of the demos or tasks, ensure you have a C++ compiler installed on your system. You can compile the source files using the following commands:
 
