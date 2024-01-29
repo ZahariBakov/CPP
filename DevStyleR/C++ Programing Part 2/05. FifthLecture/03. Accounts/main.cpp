@@ -5,6 +5,7 @@
 #include <vector>
 
 int main() {
+
     Account* sa1Ptr = new SavingAccount(200);
     Account* ca1Ptr = new CheckingAccount(300);
     Account* ca2Ptr = new CheckingAccount(450);

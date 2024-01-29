@@ -2,7 +2,7 @@
 
 Point::Point() {}
 
-Point::Point(int x, int y){
+Point::Point(int x, int y) {
 	setX(x);
 	setY(y);
 }
@@ -33,7 +33,7 @@ int Point::getY() const {
 	return this->_y;
 }
 
-void Point::printPoint() {
+void Point::printPoint() const {
 	std::cout << "The coordinates of the point are: " << this->getX() << " and " << getY() << std::endl;
 }
 

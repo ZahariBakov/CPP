@@ -30,6 +30,6 @@ std::string Author::getNationality() {
 	return this->nationality;
 }
 
-void Author::print() {
+void Author::print() const {
 	std::cout << this->firstName << " " << this->lastName << " " << this->nationality << std::endl;
 }

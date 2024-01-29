@@ -53,8 +53,8 @@ int Box::getLength() const {
     return this->_length;
 }
 
-void Box::printBox() {
-    std::cout << "Box size is. Width: " << this->getWidth() << ", Height: " << getHeight() << " and Length: " 
+void Box::printBox() const {
+    std::cout << "Box size is. Width: " << this->getWidth() << ", Height: " << getHeight() << " and Length: "
         << this->getLength() << std::endl;
 }
 
@@ -63,7 +63,7 @@ Box operator+(Box b1, Box b2) {
     return Box(width, b1.getHeight(), b1.getLength());
 }
 
-Box operator-(Box b1, Box b2){
+Box operator-(Box b1, Box b2) {
     int width = b1.getWidth() - b2.getWidth();
     return Box(width, b1.getHeight(), b1.getLength());
 }

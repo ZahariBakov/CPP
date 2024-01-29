@@ -5,6 +5,7 @@
 
 class Author {
 public:
+
 	Author(std::string, std::string, std::string);
 
 	void setFirstName(std::string);
@@ -15,9 +16,10 @@ public:
 	std::string getLastName();
 	std::string getNationality();
 
-	void print();
+	void print() const;
 
 private:
+
 	std::string firstName;
 	std::string lastName;
 	std::string nationality;

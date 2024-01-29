@@ -4,6 +4,7 @@
 
 class Team {
 public:
+
 	Team(std::string, std::string);
 
 	void setName(std::string);
@@ -16,6 +17,7 @@ public:
 	void updatePoints(int);
 
 private:
+
 	std::string _name;
 	std::string _city;
 	int         _points;

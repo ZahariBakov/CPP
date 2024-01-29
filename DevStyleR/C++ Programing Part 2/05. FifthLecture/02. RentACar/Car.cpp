@@ -68,11 +68,11 @@ std::string Car::getPlate() {
 	return this->_plate;
 }
 
-double Car::getFuelConsum() {
+double Car::getFuelConsum() const {
 	return this->_fuelConsumption;
 }
 
-int Car::getDayTax() {
+int Car::getDayTax() const {
 	return this->_taxPerDay;
 }
 

@@ -9,6 +9,7 @@
 
 class Admin : public User {
 public:
+
 	Admin(std::string, std::string);
 
 	void addTeam(Team);
@@ -18,5 +19,6 @@ public:
 	std::vector<Team> getTeams();
 
 private:
+
 	std::vector<Team> _teams;
 };

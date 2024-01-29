@@ -5,7 +5,9 @@
 class Box {
     friend Box operator+(Box, Box);
     friend Box operator-(Box, Box);
+
 public:
+
     Box(int, int, int);
 
     void setWidth(int);
@@ -16,9 +18,10 @@ public:
     int getHeight() const;
     int getLength() const;
 
-    void printBox();
+    void printBox() const;
 
 private:
+
     int _width;
     int _height;
     int _length;

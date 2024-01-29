@@ -43,19 +43,19 @@ void Drinks::setType(std::string type) {
 	this->_type = type;
 }
 
-std::string Drinks::getName() {
+std::string Drinks::getName() const {
 	return this->_name;
 }
 
-double Drinks::getPrice() {
+double Drinks::getPrice() const {
 	return this->_price;
 }
 
-int Drinks::getQuantity() {
+int Drinks::getQuantity() const {
 	return this->_quantity;
 }
 
-std::string Drinks::getType() {
+std::string Drinks::getType() const {
 	return this->_type;
 }
 

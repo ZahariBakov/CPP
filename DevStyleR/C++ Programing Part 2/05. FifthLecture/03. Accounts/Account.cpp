@@ -13,7 +13,7 @@ void Account::setMoney(double money) {
 	this->_money = money;
 }
 
-double Account::getMoney() {
+double Account::getMoney() const {
 	return this->_money;
 }
 
@@ -40,7 +40,7 @@ double Account::credit(double num) {
 	return this->_money += num;
 }
 
-double Account::getBalance() {
+double Account::getBalance() const {
 
 	return this->getMoney();
 }

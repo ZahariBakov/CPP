@@ -4,7 +4,9 @@
 #include <string>
 
 class Author {
+
 public:
+
 	Author(std::string, std::string, std::string);
 
 	void setFirstName(std::string);
@@ -18,6 +20,7 @@ public:
 	void print();
 
 private:
+
 	std::string _firstName;
 	std::string _lastName;
 	std::string _nationality;

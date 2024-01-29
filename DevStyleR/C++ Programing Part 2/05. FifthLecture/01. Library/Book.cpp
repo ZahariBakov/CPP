@@ -58,7 +58,7 @@ std::string Book::getGenre() {
 	return this->_ganre;
 }
 
-int Book::getYear() {
+int Book::getYear() const {
 	return this->_year;
 }
 

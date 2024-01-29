@@ -4,7 +4,9 @@
 #include "User.h"
 
 class Shop {
+
 public:
+
 	Shop(std::vector<User*>);
 
 	void soldDrinks();
@@ -13,5 +15,6 @@ public:
 	void searchByDrinksAndMoney(std::string, double);
 
 private:
+
 	std::vector<User*> _users;
 };

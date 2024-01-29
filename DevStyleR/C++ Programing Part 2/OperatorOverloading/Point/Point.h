@@ -3,12 +3,14 @@
 #include <iostream>
 
 class Point {
+
 	friend Point operator+(Point, Point);
 	friend Point operator-(Point, Point);
 	friend Point operator*(Point, Point);
 	friend Point operator/(Point, Point);
 
 public:
+
 	Point();
 	Point(int, int);
 
@@ -18,9 +20,10 @@ public:
 	int getX() const;
 	int getY() const;
 
-	void printPoint();
+	void printPoint() const;
 
 private:
+
 	int _x;
 	int _y;
 };

@@ -10,7 +10,7 @@ double SavingAccount::credit(double num) {
 	return Account::credit(num);
 }
 
-double SavingAccount::getBalance() {
+double SavingAccount::getBalance() const {
 	return Account::getBalance();
 }
 

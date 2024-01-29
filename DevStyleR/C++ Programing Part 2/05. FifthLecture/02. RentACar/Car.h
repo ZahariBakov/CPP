@@ -4,7 +4,9 @@
 #include <string>
 
 class Car {
+
 public:
+
 	Car(std::string, std::string, std::string, std::string, std::string, std::string, double, int = 0);
 
 	void setMake(std::string);
@@ -22,12 +24,13 @@ public:
 	std::string getColor();
 	std::string getVin();
 	std::string getPlate();
-	double      getFuelConsum();
-	int         getDayTax();
+	double      getFuelConsum() const;
+	int         getDayTax() const;
 
 	virtual double calculatePrice();
 
 private:
+
 	std::string _make;
 	std::string _model;
 	std::string _type;

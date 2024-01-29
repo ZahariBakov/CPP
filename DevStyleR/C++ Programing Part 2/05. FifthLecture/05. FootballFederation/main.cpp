@@ -5,7 +5,7 @@
 #include "Referee.h"
 #include "Fans.h"
 
-void printRanking(Team* t1, Team* t2, Team* t3) {
+static void printRanking(Team* t1, Team* t2, Team* t3) {
     std::map<int, std::string, std::greater<int>> ranking;
 
     ranking[t1->getPoints()] = t1->getName();

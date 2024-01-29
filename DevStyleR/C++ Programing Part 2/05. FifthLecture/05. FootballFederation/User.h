@@ -6,6 +6,7 @@
 
 class User {
 public:
+
 	User(std::string, std::string);
 
 	void setName(std::string);
@@ -15,6 +16,7 @@ public:
 	std::string getPass();
 
 private:
+
 	std::string _name;
 	std::string _pass;
 };

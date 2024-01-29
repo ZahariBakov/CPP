@@ -3,7 +3,9 @@
 #include "Author.h"
 
 class Book {
+
 public:
+
 	Book(std::string, std::string, int, Author);
 
 	void setBookName(std::string);
@@ -12,11 +14,12 @@ public:
 
 	std::string getBookName();
 	std::string getGenre();
-	int         getYear();
+	int         getYear() const;
 
 	void print();
 
 private:
+
 	std::string _bookName;
 	std::string _ganre;
 	int			_year;

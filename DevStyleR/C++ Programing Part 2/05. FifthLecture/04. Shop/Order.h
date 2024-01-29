@@ -6,7 +6,9 @@
 #include <vector>
 
 class Order {
+
 public:
+
 	static int number;
 
 	Order(std::vector<Drinks*>, std::string);
@@ -15,15 +17,16 @@ public:
 	void   setDate(std::string);
 	void   setTotalPrice(double);
 
-	int         getNumber();
-	std::string getDate();
-	double      getTotalPrice();
-	std::vector<Drinks*> getDrinks();
+	int                  getNumber() const;
+	std::string          getDate() const;
+	double               getTotalPrice() const;
+	std::vector<Drinks*> getDrinks() const;
 
 	double calculateTotalPrice();
 	void   printOrder();
 
 private:
+
 	int                  _number;
 	std::vector<Drinks*> _drinks;
 	std::string          _date;

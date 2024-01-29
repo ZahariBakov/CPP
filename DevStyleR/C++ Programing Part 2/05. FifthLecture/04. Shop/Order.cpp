@@ -31,19 +31,19 @@ double Order::calculateTotalPrice() {
 	return total;
 }
 
-int Order::getNumber() {
+int Order::getNumber() const {
 	return this->_number;
 }
 
-std::string Order::getDate() {
+std::string Order::getDate() const {
 	return this->_date;
 }
 
-double Order::getTotalPrice() {
+double Order::getTotalPrice() const {
 	return this->_totalPrice;
 }
 
-std::vector<Drinks*> Order::getDrinks() {
+std::vector<Drinks*> Order::getDrinks() const {
 	return this->_drinks;
 }
 

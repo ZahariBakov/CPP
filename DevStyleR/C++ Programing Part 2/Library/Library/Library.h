@@ -6,10 +6,12 @@
 
 class Library {
 public:
+
 	void addBook(Book);
-	void print();
-	void findBook(std::string);
+	void print() const;
+	void findBook(std::string) const;
 
 private:
+
 	std::vector<Book> books;
 };

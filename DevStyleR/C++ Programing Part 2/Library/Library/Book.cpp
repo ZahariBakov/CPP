@@ -1,16 +1,36 @@
 #include "Book.h"
 
 Book::Book(std::string title, std::string genre, int year, Author a) : author(a) {
-	this->title = title;
-	this->genre = genre;
-	this->year = year;
+	setTitle(title);
+	setGenre(genre);
+	setYear(year);
 }
 
-std::string Book::getTitle() {
+void Book::setTitle(std::string title) {
+	this->title = title;
+}
+
+void Book::setGenre(std::string g) {
+	this->genre = g;
+}
+
+void Book::setYear(int y) {
+	this->year = y;
+}
+
+std::string Book::getTitle() const {
 	return this->title;
 }
 
-void Book::print() {
-	std::cout << this->title << " " << this->year << " " << this->genre << std::endl;
+std::string Book::getGenre() const {
+	return this->genre;
+}
+
+int Book::getYear() const {
+	return this->year;
+}
+
+void Book::print() const {
+	std::cout << this->getTitle() << " " << this->getYear() << " " << this->getGenre() << std::endl;
 	author.print();
 }

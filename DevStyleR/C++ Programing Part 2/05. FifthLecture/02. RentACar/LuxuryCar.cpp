@@ -1,6 +1,6 @@
 #include "LuxuryCar.h"
 
-int calculateLuxTax() {
+static int calculateLuxTax() {
     int luxTax = 0;
     char answer;
 
@@ -34,7 +34,7 @@ int calculateLuxTax() {
     return luxTax;
 }
 
-double calculateKmTax(int dayTax) {
+static double calculateKmTax(int dayTax) {
     double km;
     double tax;
 

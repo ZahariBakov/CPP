@@ -24,11 +24,11 @@ void NonAlcoholic::setCityTax(double cityTax) {
 	this->_cityTax = cityTax;
 }
 
-double NonAlcoholic::getLiters() {
+double NonAlcoholic::getLiters() const {
 	return this->_liters;
 }
 
-double NonAlcoholic::getCityTax() {
+double NonAlcoholic::getCityTax() const {
 	return this->_cityTax;
 }
 

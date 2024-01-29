@@ -24,11 +24,11 @@ void Alcoholic::setTax(int tax) {
 	this->_tax = tax;
 }
 
-double Alcoholic::getVolume() {
+double Alcoholic::getVolume() const {
 	return this->_volume;
 }
 
-int Alcoholic::getTax() {
+int Alcoholic::getTax() const {
 	return this->_tax;
 }
 

@@ -6,6 +6,7 @@
 #include "Shop.h"
 
 int main() {
+
     Drinks* a1Ptr = new Alcoholic("Jack Daniels", 25.80, 1, "whiskey", 38.5, 3);
     Drinks* a2Ptr = new Alcoholic("Finlandia",    28.90, 2, "vodka",   38.5, 3);
     Drinks* a3Ptr = new Alcoholic("Efes",          2.50, 4, "beer",     4.5, 3);
@@ -47,7 +48,7 @@ int main() {
     orders2.push_back(o4Ptr);
 
     User* u1Ptr = new User("Ivan", orders);
-    User* u2Ptr = new User("Gosho", orders2);
+    User* u2Ptr = new User("Georgi", orders2);
 
     std::vector<User*> users;
     users.push_back(u1Ptr);

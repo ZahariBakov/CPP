@@ -1,6 +1,6 @@
 #include "FamilyCar.h"
 
-double getKmTax(int dayTax, std::string car) {
+static double getKmTax(int dayTax, std::string car) {
     double km;
     double tax;
 

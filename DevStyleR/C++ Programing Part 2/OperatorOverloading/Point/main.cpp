@@ -1,6 +1,7 @@
 #include "Point.h"
 
 int main() {
+
     Point p1(50, 40);
     Point p2(5, 10);
     Point p3 = p1 + p2;
