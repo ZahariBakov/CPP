@@ -1,7 +1,0 @@
-777 Viktor 256.32
-111 Ivan 400.42
-222 Maria 0.0
-333 Zahari -5.5
-444 Lora 123.56
-555 Ivaylo 0.0
-666 Sirma -123.54
