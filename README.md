@@ -17,7 +17,6 @@ This repository serves as my personal workspace for practicing C++ programming. 
 
 - Demos: Code snippets and small programs demonstrating various concepts covered in lectures.
 - Tasks: Solutions to programming tasks assigned during my learning process.
-```
 
 ## Usage
 
