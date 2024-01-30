@@ -59,6 +59,7 @@ int main(int args, char* argv[]) {
     /* Starting SDL */
     if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
         logSDLError(std::cout, "SDL_Init");
+
         return 1;
     }
 
@@ -68,6 +69,7 @@ int main(int args, char* argv[]) {
     if (window == nullptr) {
         logSDLError(std::cout, "CreateWindow");
         SDL_Quit();
+
         return 1;
     }
 
@@ -78,22 +80,46 @@ int main(int args, char* argv[]) {
         logSDLError(std::cout, "CreateRenderer");
         cleanup(window);
         SDL_Quit();
+
         return 1;
     }
+
+    /* Load bitmap image */
+    SDL_Texture* background = loadTexture("./background.bmp", renderer);
+    SDL_Texture* smile = loadTexture("./smile.bmp", renderer);
+    if (background == nullptr || smile == nullptr) {
+        cleanup(background, smile, renderer, window);
+        SDL_Quit();
+
+        return 1;
+    }
+
+    SDL_RenderClear(renderer);
+
+    int bW, bH;
+    SDL_QueryTexture(background, NULL, NULL, &bW, &bH);
+    renderTexture(background, renderer, 0, 0);
+    renderTexture(background, renderer, bW, 0);
+    renderTexture(background, renderer, 0, bH);
+    renderTexture(background, renderer, bW, bH);
+
+    int iW, iH;
+    SDL_QueryTexture(smile, NULL, NULL, &iW, &iH);
+    int x = SCREEN_WIDTH / 2 - iW / 2;
+    int y = SCREEN_HEIGHT / 2 - iH / 2;
+    renderTexture(smile, renderer, x, y);
+
+    SDL_RenderPresent(renderer);
+    SDL_Delay(1000);
 
     /* Wait 3 seconds */
     SDL_Delay(3000);
 
     /* Free all objects*/
-    // Compres these three lines down:
-    //SDL_DestroyTexture(texture);
-    //SDL_DestroyRenderer(render);
-    //SDL_DestroyWindow(window);
-    // to a single cleanup call:
-    //cleanup(texture, render, window);
+    cleanup(background, smile, renderer, window);
 
     /* Quit program */
-    //SDL_Quit();
+    SDL_Quit();
 
     return 0;
 }
