@@ -22,3 +22,17 @@ void Rectangle::draw() {
 	std::cout << "Calling from Rectangle: " << std::endl;
 	Shape::draw();
 }
+
+double Rectangle::area() {
+
+	double result = Shape::getfisrtSide() * this->_secondSide;
+
+	return result;
+}
+
+double Rectangle::perimeter() {
+
+	double result = 2 * Shape::getfisrtSide() + 2 * this->_secondSide;
+
+	return result;
+}

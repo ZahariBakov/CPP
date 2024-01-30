@@ -13,6 +13,8 @@ public:
 	double getfisrtSide() const;
 
 	virtual void draw();
+	virtual double area();
+	virtual double perimeter();
 
 private:
 

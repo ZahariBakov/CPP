@@ -20,3 +20,12 @@ double Shape::getfisrtSide() const {
 void Shape::draw() {
 	std::cout << "Shape is drawing..." << std::endl;
 }
+
+double Shape::area() {
+	return 0.0;
+}
+
+double Shape::perimeter() {
+
+	return 0.0;
+}
