@@ -9,7 +9,8 @@ protected:
     double speed;
 
 public:
-    Vehicle(double speed) : speed(speed) {}
+    Vehicle(double speed)
+        : speed(speed) {}
 
     virtual ~Vehicle() {}
 
@@ -29,7 +30,8 @@ class Car : public Vehicle {
 
 public:
     Car(double speed, bool parkingBrakeOn)
-        : Vehicle(speed), parkingBrakeOn(parkingBrakeOn) {}
+        : Vehicle(speed), parkingBrakeOn(parkingBrakeOn) {
+    }
 
     std::string toString() const override {
         std::ostringstream stream;
@@ -44,53 +46,36 @@ public:
     }
 };
 
-class Airplane : public Vehicle {
-    double altitude;
-    double heading;
+class SportCar final : public Car {
+    bool spoilerOn;
 
 public:
-    Airplane(double speed, double altitude, double heading)
-        : Vehicle(speed), altitude(altitude), heading(heading) {}
+    SportCar(double speed, bool parkingBrakeOn, bool spoilerOn)
+        : Car(speed, parkingBrakeOn), spoilerOn(spoilerOn) {}
 
-    virtual std::string toString() const override {
+    std::string toString() const override {
         std::ostringstream stream;
-        stream << Vehicle::toString() << " altitude: " << this->altitude
-            << " heading: " << this->heading;
+        stream << Car::toString() << ", spoilerOn: "
+            << (this->spoilerOn ? "yes" : "no");
         return stream.str();
     }
 
-    virtual void stop() override {
-        Vehicle::stop();
-        this->altitude = 0;
-    }
-};
-
-class StaticPlaygroundTrain : public Vehicle {
-public:
-    StaticPlaygroundTrain()
-        : Vehicle(0) {}
-
-    virtual std::string toString() const override {
-        return "cho-choooo!";
+    virtual void stop() final {
+        Car::stop();
+        this->spoilerOn = false;
     }
 };
 
 int main() {
     std::vector<std::unique_ptr<Vehicle>> vehicles;
-    vehicles.push_back(std::unique_ptr<Vehicle>(new Airplane(510, 2400, 90)));
     vehicles.push_back(std::unique_ptr<Vehicle>(new Car(50, false)));
-    vehicles.push_back(std::unique_ptr<Vehicle>(new StaticPlaygroundTrain()));
+    vehicles.push_back(std::unique_ptr<Vehicle>(new SportCar(70, false, true)));
 
     for (const auto& vehiclePtr : vehicles) {
         std::cout << vehiclePtr->toString() << std::endl;
         vehiclePtr->stop();
         std::cout << vehiclePtr->toString() << std::endl;
     }
-
-    //notice there is no delete - those are smart pointers
-  //	for (auto vehiclePtr : vehicles) {
-  //		delete vehiclePtr;
-  //	}
 
     return 0;
 }
