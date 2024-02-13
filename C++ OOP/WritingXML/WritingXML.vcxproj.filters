@@ -56,6 +56,5 @@
   </ItemGroup>
   <ItemGroup>
     <Xml Include="load_file_input.xml" />
-    <Xml Include="save_file_output.xml" />
   </ItemGroup>
 </Project>
